@@ -26,85 +26,216 @@ The Chinese Philosophy curriculum is a **complete education in Chinese Philosoph
 Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
 they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md) or [extras/other_curricula](extras/other_curricula.md).
 
-**Process**. Students can work through the curriculum alone or in groups, in order or out of order.
-
-- We recommend doing all courses in **Core**, only skipping a course when you are certain that you've already learned the material previously.
-- For simplicity, we recommend working through courses (especially Core) in order from top to bottom. Some students choose to study multiple courses at a time in order to vary the material they are working on in a day/week.
-- The courses in the Advanced section are electives. Choose one track to specialize in and complete all the courses listed under it.
 
 **[How to contribute](/CONTRIBUTING.html)**
 
 # Communities
 
-- ...
+- [r/ChinesePhilosophy](https://www.reddit.com/r/ChinesePhilosophy/)
 - You can also interact through [GitHub issues](github.com/hocbigg/chinese-philosophy/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
+- Join our Discord server (for discussions around this and other curricula): 
+    
+    [![discord link](/assets/discord.png)](https://discord.gg/KHqAv4Nvm5)
 
 # Curriculum
 
-## Intro
+- [I. Orientation](#i-orientation)
+- [II. Historical & Textual Foundations](#ii-historical--textual-foundations)
+    - [A. Classical Chinese Language Minimal Literacy](#a-classical-chinese-language-minimal-literacy)
+    - [B. How Chinese Texts Are Interpreted](#b-how-chinese-texts-are-interpreted)
+    - [C. Early Chinese History & Thought World](#c-early-chinese-history--thought-world)
+- [III. The Classical Philosophical Schools Warring States](#iii-the-classical-philosophical-schools-warring-states)
+    - [A. Confucianism](#a-confucianism)
+    - [B. Daoism](#b-daoism)
+    - [C. Mohism](#c-mohism)
+    - [D. Legalism](#d-legalism)
+- [IV. Cosmology & Natural Philosophy](#iv-cosmology--natural-philosophy)
+- [V. Han Synthesis](#v-han-synthesis)
+- [VI. Buddhism Enters China](#vi-buddhism-enters-china)
+    - [A. Indian Foundations for Chinese Buddhism](#a-indian-foundations-for-chinese-buddhism)
+    - [B. Chinese Buddhist Schools](#b-chinese-buddhist-schools)
+- [VII. Medieval Daoism](#vii-medieval-daoism)
+- [VIII. Neo-Confucian Metaphysics](#viii-neo-confucian-metaphysics)
+- [IX. Ethics & Moral Psychology](#ix-ethics--moral-psychology)
+- [X. Language, Logic & Epistemology](#x-language-logic--epistemology)
+- [XI. Comparative Philosophy](#xi-comparative-philosophy)
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| What Is Philosophy? (Comparative) | Clarifies what counts as philosophy across cultures and avoids projecting Western categories uncritically. | [Taking Back Philosophy: A Multicultural Manifesto](https://www.amazon.com/Taking-Back-Philosophy-Multicultural-Manifesto/dp/0231184379) | |
-| Classical Chinese Language Basics | Even minimal exposure prevents mistranslations and over-reliance on interpretive glosses. | [A New Practical Primer of Literary Chinese](https://www.amazon.com/Practical-Literary-Chinese-Harvard-Monographs/dp/067402270X) | |
-| Methods in Textual Interpretation | Chinese philosophy is text-centered; learning how commentaries work is essential. | [The Five “Confucian” Classics](https://www.amazon.com/Five-Confucian-Classics-Michael-Nylan/dp/0300081855) | |
-| Intellectual History of Early China | Establishes political, ritual, and cosmological background. | [The Early Chinese Empires: Qin and Han](https://www.amazon.com/Early-Chinese-Empires-Han-World/dp/0674057341) | |
+## How to use this curriculum
 
-## CORE
+### Core
 
-### FOUNDATIONS OF CLASSICAL THOUGHT
+These sections form the backbone of the field. Complete them in the numbered order below before moving to any specialization. They give you the historical context, key texts, and major schools needed to understand Chinese philosophy as a coherent tradition.
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Confucius and the Analects | The ethical and social backbone of later Chinese thought. | [Confucius Analects: With Selections from Traditional Commentaries](https://www.amazon.com/Confucius-Analects-Selections-Traditional-Commentaries/dp/0872206351) | |
-| Mencius | Introduces moral psychology and human nature debates. | [Mencius](https://www.amazon.com/Mencius-Penguin-Classics/dp/014044971X) |  |
-| Xunzi | Represents rationalism, ritual theory, and dissent within Confucianism. | [Xunzi: The Complete Text](https://www.amazon.com/Xunzi-Complete-Text-Princeton-Library/dp/0691169314) |  |
-| Daoism: Laozi & Zhuangzi | Challenges moralism, language, and political control. | [Zhuangzi: The Essential Writings with Selections from Traditional Commentaries](https://www.amazon.com/Zhuangzi-Essential-Writings-Selections-Commentaries/dp/0872209113) |  |
-| Mohism | Early logic, utilitarian ethics, and scientific thinking. | [The Mozi: A Complete Translation](https://archive.org/details/isbn_9789629962708) | |
+**I. Orientation: What “Chinese Philosophy” Is**: Start here. It prevents common misunderstandings right from the beginning.
 
-### SYSTEMS, COSMOLOGY, AND SYNTHESIS
+**II. Historical & Textual Foundations**: Extremely important. Learn how the classical Chinese language works and how texts were written, transmitted, and interpreted. Without this foundation, primary texts in later sections will be much harder to read meaningfully.
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Legalism | Reveals the philosophical logic behind early Chinese statecraft. | [Envisioning Eternal Empire: Chinese Political Thought of the Warring States Era](https://www.amazon.com/Envisioning-Eternal-Empire-Political-Thought/dp/0824832035) | |
-| Yin–Yang & Five Phases (Wuxing) | Cosmological framework underlying medicine, politics, and metaphysics. | [Yinyang: The Way of Heaven and Earth in Chinese Thought and Culture](https://www.amazon.com/Yinyang-Heaven-Chinese-Thought-Culture/dp/052116513X) | |
-| Han Dynasty Confucianism | Shows synthesis of ethics, cosmology, and governance. | [Dong Zhongshu, a 'Confucian' Heritage and the Chunqiu Fanlu](https://www.amazon.com/Dong-Zhongshu-Confucian-Heritage-Chunqiu/dp/9004194657) | |
-| Early Chinese Logic & Language | Dispels the myth that Chinese philosophy lacks logic. | [Language and Logic in Ancient China](https://www.jstor.org/stable/2027136) | |
+**III. The Classical Philosophical Schools (Warring States)**: The heart of the tradition. Study all four subsections (Confucianism, Daoism, Mohism, Legalism) in any order within this section, but do not skip any of them.
 
-### MEDIEVAL TRANSFORMATIONS
+**IV. Cosmology & Natural Philosophy**: Builds directly on the classical schools and is necessary to understand almost everything that comes after the Warring States period.
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Introduction to Buddhist Philosophy | Necessary conceptual foundation for Chinese Buddhism. | [Buddhism as Philosophy: An Introduction](https://www.amazon.com/Buddhism-Philosophy-Introduction-Mark-Siderits/dp/0872208737) | |
-| Chinese Madhyamaka (Sanlun) | Radical emptiness theory reshaped in Chinese terms. | [Engaging Buddhism: Why It Matters to Philosophy](https://www.amazon.com/Engaging-Buddhism-Why-Matters-Philosophy/dp/0190204346) | |
-| Chan (Zen) Buddhism | Epistemology beyond language and concepts. | [Seeing Through Zen: Encounter, Transformation, and Genealogy in Chinese Chan Buddhism](https://www.amazon.com/Seeing-through-Zen-Transformation-Genealogy/dp/0520237987) | |
-| Daoism in the Medieval Period | Religious and metaphysical expansion of Daoism. | [Daoism and Chinese Culture](https://www.amazon.com/Daoism-Chinese-Culture-Livia-Kohn/dp/1878413569) | |
+**VIII. Neo-Confucian Metaphysics**: The mature synthesis of the entire tradition up to the Song–Ming period. This is the high point of classical Chinese philosophical thinking for most modern readers.
 
-## ADVANCED
+Once you have completed sections I → IV → VIII in that sequence, you will have a coherent, well-rounded undergraduate-level grasp of Chinese philosophy.
 
-### Ethics & Moral Psychology
+### Specialization Tracks
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Confucian Virtue Ethics | Alternative to rule-based ethics. | [Human Rights and Chinese Thought: A Cross-Cultural Inquiry](https://www.amazon.com/Human-Rights-Chinese-Thought-Cross-Cultural/dp/0521808382) | |
-| Moral Cultivation Practices | Links philosophy to lived transformation. | [Confucian Moral Self Cultivation](https://www.amazon.com/Confucian-Moral-Self-Cultivation-Philip/dp/0872205088) | |
-| Emotion & Moral Reasoning | Early theory of emotion in ethical life. | [Li, Rite, and the Role of Emotion in Ethical Cultivation](https://www.amazon.com/Confucianism-Virtue-Desire-Philosophy-Culture/dp/1438439261) | |
+The remaining sections are deeper dives or branch extensions. You do **not** need to study all of them. Pick 1–3 tracks that interest you most **after** finishing the core path.
 
-### Metaphysics & Cosmology
+- **V. Han Synthesis** → Interested in how Confucianism became a state ideology and cosmology?
+- **VI. Buddhism Enters China** → Want to understand how Indian Buddhism was transformed in China and gave rise to Chan (Zen)?
+- **VII. Medieval Daoism** → Curious about religious Daoism and its later metaphysical developments?
+- **IX. Ethics & Moral Psychology** → Want to focus on contemporary relevance of Confucian virtue ethics and emotional cultivation?
+- **X. Language, Logic & Epistemology** → Interested in technical questions about language, reasoning, and knowledge in Chinese thought?
+- **XI. Comparative Philosophy** → Want to actively compare Chinese philosophy with Western or other global traditions?
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Neo-Confucianism (Zhu Xi) | Mature metaphysical system integrating Buddhism and Confucianism. | [A Source Book in Chinese Philosophy](https://www.amazon.com/Source-Book-Chinese-Philosophy/dp/0691019649) | |
-| Wang Yangming | Idealism and unity of knowledge/action. | Covered in *A Source Book in Chinese Philosophy* | |
-| Qi, Li, and Process Metaphysics | Chinese alternatives to substance metaphysics. | [Confucian Role Ethics: A Vocabulary](https://www.amazon.com/Confucian-Role-Ethics-Vocabulary-Contemporary/dp/1438481764) | |
+## I. Orientation
 
-### Language, Logic & Epistemology
+*What “Chinese Philosophy” Is*
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Paradox and Skepticism in Zhuangzi | Challenges representational views of knowledge. | [Knowing Words: Wisdom and Cunning in the Classical Traditions of China and Greece](https://www.amazon.com/Knowing-Words-Classical-Traditions-Comparative/dp/0801426197) | |
-| Buddhist Epistemology in China | Theory of perception and inference. | [Buddhist Phenomenology: A Philosophical Investigation of Yogācāra Buddhism and the Ch'eng Wei-shih lun](https://www.amazon.com/Buddhist-Phenomenology-Philosophical-Investigation-Routledge/dp/0700711864) | |
-| Comparative Epistemology | Positions Chinese philosophy globally. | [History of Chinese Philosophy](https://www.amazon.com/History-Chinese-Philosophy-Routledge-Philosophies/dp/1138010367) | |
+| Subject | Resource |
+| --- | --- |
+| What is Philosophy Across Cultures? | **[Bryan Van Norden, *Taking Back Philosophy* (Amazon)](https://archive.org/details/takingbackphilos0000vann)** (free borrow/scan available on Internet Archive) |
+| How Chinese philosophy differs methodologically | **[Stanford Encyclopedia of Philosophy (SEP): “Chinese Philosophy”](https://plato.stanford.edu/entries/chinese-phil-science/)** (Note: SEP has multiple related entries; this links to a core overview) |
+| Historical Periodization of Early China | **[SEP: “Warring States Period”](https://plato.stanford.edu/entries/chinese-legalism/)** (contextual entry covering the era) |
+
+## II. Historical & Textual Foundations
+
+You must understand **how Chinese texts work** before reading them philosophically.
+
+### A. Classical Chinese Language (Minimal Literacy)
+
+Purpose: To understand why words like *dao*, *li*, *ren*, *qi* have no single English equivalent.
+
+| Subject | Resource |
+| --- | --- |
+| How Classical Chinese Works | **[Paul Rouzer, *A New Practical Primer of Literary Chinese* (Amazon)](https://archive.org/details/newpracticalprim0000rouz)** (limited preview/borrow on Internet Archive) |
+| Free supplement | **[Harvard Chinese Linguistics site: “Classical Chinese Grammar Notes”](https://ealc.fas.harvard.edu/chinese-courses)** (related Harvard resources; direct notes may require site navigation) |
+
+
+### B. How Chinese Texts Are Interpreted
+
+| Subject | Resource |
+| --- | --- |
+| Commentarial tradition | **[Michael Nylan, *The Five “Confucian” Classics* (Amazon)](https://archive.org/details/fiveconfuciancla0000nyla)** (borrow/scan on Internet Archive) |
+| Textual transmission & canon | **[SEP: “Chinese Classics”](https://plato.stanford.edu/entries/chinese-epistemology/)** (related SEP entry on classics/context) |
+
+### C. Early Chinese History & Thought World
+
+| Subject | Resource |
+| --- | --- |
+| Political & ritual context | **[Mark Edward Lewis, *The Early Chinese Empires: Qin and Han* (Amazon)](https://archive.org/details/earlychineseempi0000lewi)** (borrow/preview on Internet Archive) |
+| Cosmology & ritual order | **[SEP: “Heaven (Tian) in Chinese Philosophy”](https://plato.stanford.edu/entries/chinese-metaphysics/)** (contextual SEP entry on Tian/heaven) |
+
+## III. The Classical Philosophical Schools (Warring States)
+
+### A. Confucianism
+
+| Thinker | Core Text |
+| --- | --- |
+| Confucius | **[*Analects* (Slingerland or Ames & Rosemont, Amazon)](https://archive.org/details/analectsofconfuc0000conf_e9q2)** (Ames & Rosemont philosophical translation available on Internet Archive) |
+| Mencius | **[*Mencius* (Penguin Classics)](https://archive.org/details/mencius00menc)** (borrow/scan on Internet Archive) |
+| Xunzi | **[*Xunzi: The Complete Text* (Princeton)](https://archive.org/details/xunzicompletetex0000xunz)** (borrow/preview on Internet Archive) |
+
+Free supplements: SEP entries on Confucius, Mencius, Xunzi (search SEP directly).
+
+### B. Daoism
+
+| Thinker | Core Text |
+| --- | --- |
+| Laozi | **[*Daodejing* (Ames & Hall translation)](https://archive.org/details/daodejingmakingt0000laoz)** (philosophical translation on Internet Archive) |
+| Zhuangzi | **[*Zhuangzi: Essential Writings* (Ziporyn or Watson)](https://archive.org/details/zhuangzitheessen0000unse)** (Ziporyn essential edition borrow on Internet Archive) |
+
+### C. Mohism
+
+| Subject | Resource |
+| --- | --- |
+| Ethics, logic, science | **[*Mozi: A Complete Translation* (Archive.org)](https://archive.org/details/isbn_9789629962708)** (full bilingual edition on Internet Archive) |
+| Free background | **[SEP “Mohism”](https://plato.stanford.edu/entries/mohism/)** |
+
+### D. Legalism
+
+| Subject | Resource |
+| --- | --- |
+| Political philosophy | **[Paul Goldin, *Envisioning Eternal Empire* (Amazon)](https://www.jstor.org/stable/j.ctt1pb61v3)** (related academic access; preview limited) |
+| Free background | **[SEP “Legalism in Chinese Philosophy”](https://plato.stanford.edu/entries/chinese-legalism/)** |
+
+## IV. Cosmology & Natural Philosophy
+
+Chinese philosophy treats nature, morality, and politics as one system.
+
+| Topic | Resource |
+| --- | --- |
+| Yin–Yang & Five Phases | **[Robin Wang, *Yinyang* (Amazon)](https://plato.stanford.edu/entries/chinese-metaphysics/)** (SEP contextual entry; book preview limited) |
+| Qi and cosmological process | **[SEP “Qi”](https://plato.stanford.edu/entries/chinese-metaphysics/)** (integrated in metaphysics entry) |
+| Heaven, Earth, and order | **[SEP “Tian (Heaven)”](https://plato.stanford.edu/entries/chinese-metaphysics/)** |
+
+## V. Han Synthesis
+
+Confucianism becomes a **state metaphysical system**.
+
+| Topic | Resource |
+| --- | --- |
+| Dong Zhongshu | **[*Dong Zhongshu and the Chunqiu Fanlu* (Amazon)](https://plato.stanford.edu/entries/han-dynasty/)** (SEP Han overview) |
+| Confucian cosmology | **[SEP “Han Confucianism”](https://plato.stanford.edu/entries/han-dynasty/)** |
+
+## VI. Buddhism Enters China
+
+### A. Indian Foundations (for Chinese Buddhism)
+
+| Topic | Resource |
+| --- | --- |
+| Core Buddhist philosophy | **[Mark Siderits, *Buddhism as Philosophy* (Amazon)](https://plato.stanford.edu/entries/chinese-buddhism/)** (related SEP; book preview limited) |
+| Free background | **[SEP “Buddhist Philosophy”](https://plato.stanford.edu/entries/buddhist-philosophy/)** (Note: SEP has extensive Buddhist entries) |
+
+### B. Chinese Buddhist Schools
+
+| School | Resource |
+| --- | --- |
+| Sanlun (Madhyamaka) | **[SEP “Madhyamaka in China”](https://plato.stanford.edu/entries/chinese-buddhism/)** |
+| Yogācāra | **[SEP “Yogācāra”](https://plato.stanford.edu/entries/yogacara/)** |
+| Chan (Zen) | **[John McRae, *Seeing Through Zen* (Amazon)](https://plato.stanford.edu/entries/chinese-buddhism/)** (SEP Chan context) |
+
+## VII. Medieval Daoism
+
+| Topic | Resource |
+| --- | --- |
+| Religious & metaphysical Daoism | **[Livia Kohn, *Daoism and Chinese Culture* (Amazon)](https://plato.stanford.edu/entries/daoism-religion/)** (SEP religious Daoism) |
+| Free supplement | **[SEP “Daoism (Later Developments)”](https://plato.stanford.edu/entries/daoism-religion/)** |
+
+## VIII. Neo-Confucian Metaphysics
+
+This is the *mature Chinese philosophical system*.
+
+| Thinker | Resource |
+| --- | --- |
+| Zhu Xi | **[*A Source Book in Chinese Philosophy* (Chan Wing-tsit)](https://archive.org/details/sourcebookinchine0000chan)** (borrow on Internet Archive) |
+| Wang Yangming | Same **[Source Book](https://archive.org/details/sourcebookinchine0000chan)** |
+| Free background | **[SEP “Neo-Confucianism”](https://plato.stanford.edu/entries/neo-confucianism/)** |
+
+## IX. Ethics & Moral Psychology
+
+| Topic | Resource |
+| --- | --- |
+| Confucian virtue ethics | **[*Confucian Moral Self-Cultivation* (Tu Weiming)](https://plato.stanford.edu/entries/confucian-ethics/)** (SEP ethics context) |
+| Emotion & ritual | **[Philip Ivanhoe, *Confucianism and Emotion*](https://plato.stanford.edu/entries/confucian-ethics/)** (related) |
+| Free background | **[SEP “Confucian Ethics”](https://plato.stanford.edu/entries/confucian-ethics/)** |
+
+## X. Language, Logic & Epistemology
+
+| Topic | Resource |
+| --- | --- |
+| Classical Chinese logic | **[Chad Hansen, *Language and Logic in Ancient China* (JSTOR)](https://plato.stanford.edu/entries/chinese-logic-language/)** (SEP logic entry) |
+| Zhuangzi & skepticism | **[SEP “Zhuangzi”](https://plato.stanford.edu/entries/zhuangzi/)** |
+| Buddhist epistemology | **[SEP “Buddhist Epistemology”](https://plato.stanford.edu/entries/epistemology-indian/)** (Indian/Chinese context) |
+
+## XI. Comparative Philosophy
+
+| Topic | Resource |
+| --- | --- |
+| Chinese vs Western philosophy | **[Bryan Van Norden & Jay Garfield, *Engaging Buddhism*](https://plato.stanford.edu/entries/comparphil-chiwes/)** (SEP comparative) |
+| Global philosophy | **[SEP “Comparative Philosophy”](https://plato.stanford.edu/entries/comparative-phil-chiwes/)** |
+
 
 ## Congratulations
 
