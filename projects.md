@@ -1,40 +1,36 @@
 # Projects
 
-This page is a curated collection of well-written, step-by-step guides for learning Chinese philosophy through hands-on, project-based practice.
+A curated directory of actionable project guides, digital humanities toolkits, step-by-step research methodologies, and analytical workflows for Chinese and comparative philosophy.
 
-> *What I cannot create, I do not understand — Richard Feynman.*
+## Digital Sinology & Computational Textual Analysis
 
-These projects are meant to support learning throughout the curriculum, not only at the end.  
-By building, writing, creating, or reconstructing real artifacts in the field, learners develop practical understanding alongside theoretical study.
+- [Mining Early Chinese Texts Using Python and the CText API (Donald Sturgeon)](https://dsturgeon.net/tutorials/)
+- [Building a Classical Chinese Named-Entity Extraction Workflow with MARKUS (Hilde De Weerdt & Brent Ho)](https://dh.chinese-empires.eu/markus/)
+- [Visualizing Text Reuse and Parallel Passages in Early Chinese Thought (Chinese Text Project)](https://ctext.org/tools)
+- [Querying Historical Knowledge Graphs via SPARQL (Chinese Text Project Linked Data)](https://sparql.ctext.org/)
+- [Automated Textual Analysis and N-Gram Shingling with Text Tools (Donald Sturgeon)](https://dsturgeon.net/text-tools/)
 
-## Tutorials
+## Textual Criticism, Philology & Translation Studies
 
-* [Philosophical Aphorisms](#write-your-own-aphorisms)
-* [Dialogues](#compose-your-own-dialogues)
-* [Classical Commentary](#write-your-own-commentary)
-* [Treatises](#author-your-own-treatises)
-* [Poetic Essays](#craft-your-own-poetic-essays)
+- [Translating and Annotating Early Chinese Texts: Hermeneutic and Semantic Frameworks (SEP)](https://plato.stanford.edu/entries/chinese-translate-interpret/)
+- [Building an Intertextual Concordance and Parallel Passage Corpus (Chinese Text Project)](https://ctext.org)
+- [Constructing a Multi-Commentary Critical Apparatus: Principles and Workflow (Brill Philological Methodology)](https://brill.com)
 
-### Philosophical Aphorisms
+## Philosophical Argument Reconstruction & Formal Disputation
 
-* [How To Write an Aphorism](https://jamesgeary.com/how-to-write-an-aphorism) (Article / Tutorial)  
-* [When & How to Write an Aphorism](https://literaryterms.net/when-and-how-to-write-an-aphorism) (Guide with exercises)
+- [Guidelines on Philosophical Exegesis and Argument Reconstruction (Jim Pryor)](https://www.jimpryor.net/teaching/guidelines/writing.html)
+- [Visual Argument Mapping for Classical Disputations and Thought Experiments (Rationale)](https://rationaleonline.com)
+- [A Brief Guide to Writing the Philosophy Paper and Defending a Thesis (Harvard College Writing Center)](https://writingcenter.fas.harvard.edu/pages/brief-guide-writing-philosophy-paper)
+- [Reconstructing Analogical and Non-Deductive Reasoning in Pre-Qin Dialectics (SEP Mohist Canons)](https://plato.stanford.edu/entries/mohist-canons/)
 
-### Dialogues
+## Comparative Philosophy & Applied Ethics Policy
 
-* [How to Write a Philosophy Dialogue](https://owlcation.com/humanities/how-to-write-a-philosophy-dialogue) (Step-by-step tutorial)  
-* [Writing Your Own Dialogues Will Help You Learn Better and Faster](https://www.youtube.com/watch?v=nkroe1kT_8Y) (Video guide)
+- [Methodology and Comparative Modeling in Global Philosophy (SEP)](https://plato.stanford.edu/entries/comparphil-chiwes/)
+- [Formulating Comparative Policy Briefs on Governance and Ethics (Carnegie Council for Ethics in International Affairs)](https://www.carnegiecouncil.org)
+- [Applying Confucian Role Ethics to Contemporary Biomedical and Environmental Case Studies (SEP Chinese Ethics)](https://plato.stanford.edu/entries/ethics-chinese/)
 
-### Classical Commentary
+## Scholarly Curation & Encyclopedic Publishing
 
-* [How to Write an Exegesis](https://www.wikihow.com/Write-an-Exegesis) (Step-by-step guide adaptable to classical commentary)  
-* [Paper Exegesis](https://phil.washington.edu/sites/phil/files/documents/paper_exegesis_final.pdf) (University guide for summarizing and explaining texts)
-
-### Treatises
-
-* [Guidelines on Writing a Philosophy Paper](https://www.jimpryor.net/teaching/guidelines/writing.html) (Detailed guide adaptable to treatise structure)  
-* [Philosophy Writing Guide](https://www.swarthmore.edu/writing/philosophy-writing-guide) (Structured tutorial on arguments and reasoning)
-
-### Poetic Essays
-
-* [How To Write Chinese Fu Poems in English](https://medium.com/@Internationalpoetrynewsletter/how-to-write-chinese-fu-poems-in-english-bfa44dd756b5) (Guide to fu/rhapsody form)
+- [Authoring a Peer-Reviewed Academic Encyclopedia Entry (Internet Encyclopedia of Philosophy Author Guidelines)](https://iep.utm.edu/submit/)
+- [Curating Primary and Secondary Source Bibliographies in Classical Thought (Oxford Bibliographies in Chinese Studies)](https://www.oxfordbibliographies.com)
+- [Designing Open-Access Digital Syllabi and Readers in Non-Western Philosophy (American Philosophical Association)](https://www.apaonline.org)

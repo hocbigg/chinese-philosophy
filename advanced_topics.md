@@ -1,75 +1,76 @@
 # Advanced Topics
 
-- [Han Synthesis](#han-synthesis)
-- [Buddhism Enters China](#buddhism-enters-china)
-    - [A. Indian Foundations for Chinese Buddhism](#a-indian-foundations-for-chinese-buddhism)
-    - [B. Chinese Buddhist Schools](#b-chinese-buddhist-schools)
-- [Medieval Daoism](#medieval-daoism)
-- [Ethics & Moral Psychology](#ethics--moral-psychology)
-- [Language, Logic & Epistemology](#language-logic--epistemology)
-- [XI. Comparative Philosophy](#xi-comparative-philosophy)
+Specialization tracks designed for students who have completed the core undergraduate curriculum and wish to pursue advanced subfields, technical methodologies, and contemporary research in Chinese philosophy.
 
-The remaining sections are deeper dives or branch extensions. You do not need to study all of them. Pick 1–3 tracks that interest you most after finishing the core path.
+### Specialization Index
+- [Early Medieval Philosophy, Xuanxue, and Daoist Metaphysics](#early-medieval-philosophy-xuanxue-and-daoist-metaphysics): Explores post-Han ontological revolutions, meontology (*wu* vs. *you*), commentary traditions, and Daoist religious-philosophical systems.
+- [Advanced Chinese Buddhist Philosophy & Epistemology](#advanced-chinese-buddhist-philosophy--epistemology): Investigates Mahayana transformations in China, centering on Sanlun Madhyamaka, Weishi Yogacara, Tiantai dialectics, Huayan mereology, and Chan hermeneutics.
+- [Logic, Philosophy of Language, and Epistemology](#logic-philosophy-of-language-and-epistemology): Analyzes classical semantic theories, the School of Names, Late Mohist dialectics, Daoist skepticism, and contemporary formal approaches.
+- [Moral Psychology, Virtue Ethics, and Self-Cultivation](#moral-psychology-virtue-ethics-and-self-cultivation): Probes affective cultivation, moral sentimentalism vs. constructivism, relational selfhood, and feminist/care-ethics reconstructions.
+- [Political Philosophy, Modern New Confucianism, and Contemporary Theory](#political-philosophy-modern-new-confucianism-and-contemporary-theory): Examines statecraft, imperial constitutionalism, 20th-century New Confucian metaphysics, and modern debates over meritocracy and democracy.
 
-- V. Han Synthesis → Interested in how Confucianism became a state ideology and cosmology?
-- VI. Buddhism Enters China → Want to understand how Indian Buddhism was transformed in China and gave rise to Chan (Zen)?
-- VII. Medieval Daoism → Curious about religious Daoism and its later metaphysical developments?
-- IX. Ethics & Moral Psychology → Want to focus on contemporary relevance of Confucian virtue ethics and emotional cultivation?
-- X. Language, Logic & Epistemology → Interested in technical questions about language, reasoning, and knowledge in Chinese thought?
-- XI. Comparative Philosophy → Want to actively compare Chinese philosophy with Western or other global traditions?
+---
 
-## Han Synthesis
+## Early Medieval Philosophy, Xuanxue, and Daoist Metaphysics
 
-Confucianism becomes a state metaphysical system.
+Investigates the intellectual transformation of the Wei-Jin period (220–420 CE), where thinkers shifted focus from Han cosmological teleology to fundamental ontology, hermeneutical commentary, and the nature of non-being.
 
-| Topic | Resource |
-| --- | --- |
-| Dong Zhongshu | [*Dong Zhongshu and the Chunqiu Fanlu*](https://plato.stanford.edu/entries/han-dynasty/) (SEP Han overview) |
-| Confucian cosmology | [SEP “Han Confucianism”](https://plato.stanford.edu/entries/han-dynasty/) |
+| Topic | Why Study | Resources |
+| --- | --- | --- |
+| Xuanxue Ontology & Meontology | Investigates the Wei-Jin shift from cosmological generation to fundamental ontology, analyzing non-being (*wu*) as the unconditioned ground of all phenomena (*you*). | Richard John Lynn (trans.), *The Classic of the Way and Its Virtue: A New Translation of the Tao-te ching of Laozi as Interpreted by Wang Bi* (Columbia University Press)<br>- Alan K. L. Chan, *Two Visions of the Way: A Study of the Wang Pi and the Ho-shang Kung Commentaries on the Lao-Tzu* (SUNY Press)<br>- [SEP: “Neo-Daoism”](https://plato.stanford.edu/entries/neo-daoism/)<br>- [SEP: “Wang Bi”](https://plato.stanford.edu/entries/wang-bi/) |
+| Guo Xiang & Immanent Pluralism | Examines Guo Xiang's rejection of a transcendent root, developing a radical philosophy of self-transformation (*ziran*) and solitary emergence (*duhua*). | Brook Ziporyn, *The Penumbra Unbound: The Neo-Taoist Philosophy of Guo Xiang* (SUNY Press)<br>- Richard John Lynn (trans.), *Zhuangzi: A New Translation of the Sayings of Master Zhuang as Interpreted by Guo Xiang* (Columbia University Press)<br>- [IEP: “Guo Xiang”](https://iep.utm.edu/guoxiang/) |
+| Wei-Jin Aesthetics & Pure Conversation | Explores the existential and aesthetic rebellion of the Seven Sages of the Bamboo Grove, interrogating the dialectic between natural spontaneity (*ziran*) and social moral codes (*mingjiao*). | Richard B. Mather (trans.), *Shih-shuo Hsin-yü: A New Account of Tales of the World* (University of Michigan Press)<br>- David Chai (ed.), *Dao Companion to Xuanxue (Neo-Daoism)* (Springer) |
+| Daoist Internal Alchemy (Neidan) & Sacred Metaphysics | Analyzes how classical Daoist naturalism evolved into complex cosmological, physiological, and meditative systems of self-transcendence. | Fabrizio Pregadio, *The Seal of the Unity of the Three: A Study and Translation of the Cantong qi* (Golden Elixir Press)<br>- Livia Kohn, *Early Daoist Meditation* (University of Hawaii Press)<br>- [SEP: “Religious Daoism”](https://plato.stanford.edu/entries/daoism-religion/) |
 
-## Buddhism Enters China
+---
 
-### A. Indian Foundations (for Chinese Buddhism)
+## Advanced Chinese Buddhist Philosophy & Epistemology
 
-| Topic | Resource |
-| --- | --- |
-| Core Buddhist philosophy | [Mark Siderits, *Buddhism as Philosophy*]() (related SEP) |
-| Free background | [SEP Buddha](https://plato.stanford.edu/entries/buddha/) |
+Focuses on the technical philosophical systems that emerged as Indian Buddhist treatises on emptiness, consciousness, and hermeneutics were re-conceptualized in early and medieval China.
 
-### B. Chinese Buddhist Schools
+| Topic | Why Study | Resources |
+| --- | --- | --- |
+| Chinese Madhyamaka (Sanlun) & Sengzhao | Examines the reception of Nagarjuna's emptiness (*sunyata*) doctrine in China and Sengzhao's radical synthesis of timelessness and the immobility of things. | Sengzhao, *The Treatise of Sengzhao (Zhaolun)*, trans. Herminghausen or Liebenthal (Hong Kong University Press)<br>- Rafal Stepien (ed.), *Buddhist Literature as Philosophy, Buddhist Philosophy as Literature* (SUNY Press)<br>- [SEP: “Madhyamaka”](https://plato.stanford.edu/entries/madhyamaka/) |
+| East Asian Yogacara (Faxiang / Consciousness-Only) | Investigates Xuanzang and Kuiji's sophisticated phenomenological epistemology, analyzing the eight consciousnesses, seeds (*bija*), and the transformation of the basis. | Dan Lusthaus, *Buddhist Phenomenology: A Philosophical Investigation of Yogacara Buddhism and the Ch'eng Wei-shih Lun* (Routledge)<br>- Xuanzang, *Cheng Weishi Lun: The Treatise on the Establishment of the Doctrine of Consciousness-Only*, trans. Wei Tat (Dai Nippon Printing) |
+| Tiantai Dialectics & Omnipresence | Probes Zhiyi's system of the Threefold Truth (Emptiness, Conventionality, Middle) and the paradoxical doctrine that good and evil are inherently entailed in ultimate reality. | Brook Ziporyn, *Being and Ambiguity: Philosophical Experiments with Tiantai Buddhism* (Open Court)<br>- Brook Ziporyn, *Emptiness and Omnipresence: An Essential Introduction to Tiantai Buddhism* (Indiana University Press)<br>- [SEP: “Tiantai Buddhism”](https://plato.stanford.edu/entries/buddhism-tiantai/) |
+| Huayan Mereology & Intersubjectivity | Analyzes the ontology of universal interpenetration (*shishi wu'ai*) and Fazang's sophisticated relation between universal Principle (*li*) and concrete Phenomena (*shi*). | Francis H. Cook, *Hua-yen Buddhism: The Jewel Net of Indra* (Penn State University Press)<br>- Fazang, *Treatise on the Golden Lion* (in Wing-tsit Chan, *A Source Book in Chinese Philosophy*, Princeton University Press)<br>- [SEP: “Huayan Buddhism”](https://plato.stanford.edu/entries/buddhism-huayan/) |
+| Chan Language Skepticism & Gong'an Hermeneutics | Investigates Chan epistemological paradoxes, the deconstructive role of encounter dialogue, and the tension between sudden enlightenment and pedagogical tradition. | John R. McRae, *Seeing through Zen: Encounter, Transformation, and Genealogy in Chinese Chan Buddhism* (University of California Press)<br>- Dale S. Wright, *Philosophical Meditations on Zen Buddhism* (Cambridge University Press)<br>- [SEP: “Chan Buddhism”](https://plato.stanford.edu/entries/buddhism-chan/) |
 
-| School | Resource |
-| --- | --- |
-| Sanlun (Madhyamaka) | [SEP “Madhyamaka in China”]() |
-| Yogācāra | [SEP “Yogācāra”](https://plato.stanford.edu/entries/yogacara/) |
-| Chan (Zen) | [John McRae, *Seeing Through Zen*]() (SEP Chan context) |
+---
 
-## Medieval Daoism
+## Logic, Philosophy of Language, and Epistemology
 
-| Topic | Resource |
-| --- | --- |
-| Religious & metaphysical Daoism | [Livia Kohn, *Daoism and Chinese Culture*](https://plato.stanford.edu/entries/daoism-religion/) (SEP religious Daoism) |
-| Free supplement | [SEP “Daoism (Later Developments)”](https://plato.stanford.edu/entries/daoism-religion/) |
+Examines classical and medieval treatments of semantic reference, indexicals, disputation (*bian*), paradox, skepticism, and formal structures of analogical reasoning.
 
-## Ethics & Moral Psychology
+| Topic | Why Study | Resources |
+| --- | --- | --- |
+| The School of Names (Mingjia) | Explores early paradoxes of identity, part-whole relations, and predication through the writings of Gongsun Long and Hui Shi. | A. C. Graham, *Disputers of the Tao: Philosophical Argument in Ancient China* (Open Court)<br>- Christoph Harbsmeier, *Science and Civilisation in China, Volume 7, Part 1: Language and Logic* (Cambridge University Press)<br>- [SEP: “School of Names”](https://plato.stanford.edu/entries/school-names/) |
+| The Later Mohist Canons | Analyzes the most rigorous formal epistemology, optics, geometry, and semantic classification theories developed in ancient China. | A. C. Graham, *Later Mohist Logic, Ethics and Science* (Chinese University Press / SOAS)<br>- Chris Fraser, *The Philosophy of the Mozi: The First Consequentialists* (Columbia University Press)<br>- [SEP: “Mohist Canons”](https://plato.stanford.edu/entries/mohist-canons/) |
+| Zhuangzian Epistemic Relativism & Perspectivism | Evaluates radical semantic skepticism, the limits of discursive distinction-making, and contextualist theories of knowledge in the *Qiwulun*. | Chad Hansen, *A Daoist Theory of Chinese Thought: A Philosophical Interpretation* (Oxford University Press)<br>- Paul Kjellberg & Philip J. Ivanhoe (eds.), *Essays on Skepticism, Relativism, and Ethics in the Zhuangzi* (SUNY Press) |
+| Contemporary Chinese Philosophy of Language | Evaluates technical modern debates concerning mass nouns, truth-theories in Classical Chinese, and cross-linguistic semantics. | Chad Hansen, *Language and Logic in Ancient China* (University of Michigan Press)<br>- Bo Mou (ed.), *Comparative Approaches to Chinese Philosophy* (Routledge)<br>- [SEP: “Epistemology in Chinese Philosophy”](https://plato.stanford.edu/entries/chinese-epistemology/) |
 
-| Topic | Resource |
-| --- | --- |
-| Confucian virtue ethics | [*Confucian Moral Self-Cultivation* (Tu Weiming)](https://archive.org/details/confucianmoralse0000ivan_2ed) (SEP ethics context) |
-| Emotion & ritual | [Philip Ivanhoe, *Confucianism and Emotion*](https://archive.org/details/confucianmoralse0000ivan_2ed) (related) |
-| Free background | [SEP “Confucian Ethics”](https://archive.org/details/confucianmoralse0000ivan_2ed) |
+---
 
-## Language, Logic & Epistemology
+## Moral Psychology, Virtue Ethics, and Self-Cultivation
 
-| Topic | Resource |
-| --- | --- |
-| Classical Chinese logic | [Chad Hansen, *Language and Logic in Ancient China* (JSTOR)](https://plato.stanford.edu/entries/chinese-logic-language/) (SEP logic entry) |
-| Zhuangzi & skepticism | [SEP “Zhuangzi”](https://plato.stanford.edu/entries/zhuangzi/) |
-| Buddhist epistemology | |
+Examines the psychological mechanics of ethical transformation, affective appraisal, the moral role of ritual, and contemporary dialogues with Western virtue ethics and feminist care theory.
 
-## XI. Comparative Philosophy
+| Topic | Why Study | Resources |
+| --- | --- | --- |
+| Sentimentalism vs. Constructivism (Mencius & Xunzi) | Contrasts Mencian moral nativism/sprouting theory (*duan*) with Xunzian cognitive habituation and artificial reconstruction (*wei*). | Kwong-loi Shun, *Mencius and Early Chinese Thought* (Stanford University Press)<br>- T. C. Kline III & Philip J. Ivanhoe (eds.), *Virtue, Nature, and Moral Agency in the Xunzi* (Hackett Publishing)<br>- [SEP: “Ethics in Chinese Philosophy”](https://plato.stanford.edu/entries/ethics-chinese/) |
+| Neo-Confucian Moral Psychology | Explores how Song-Ming thinkers integrated Buddhist psychology to explain moral failure, self-deception, the unity of knowing and acting, and the realization of original mind. | Stephen C. Angle, *Sagehood: The Contemporary Significance of Neo-Confucian Philosophy* (Oxford University Press)<br>- Philip J. Ivanhoe, *Confucian Moral Self-Cultivation* (Hackett Publishing)<br>- [SEP: “Song-Ming Confucianism”](https://plato.stanford.edu/entries/song-ming-confucianism/) |
+| Confucian Relational Ethics & Contemporary Care Theory | Analyzes Confucian role ethics, filial obligation, and emotional harmony in critical dialogue with contemporary feminist care ethics. | Chenyang Li, *The Confucian Philosophy of Harmony* (Routledge)<br>- Chenyang Li (ed.), *The Sage and the Second Sex: Confucianism, Ethics, and Gender* (Open Court)<br>- Henry Rosemont Jr. & Roger T. Ames, *The Examination of the Self in Role Ethics* (SUNY Press) |
+| Affect, Moral Salience, and Ritual Agency | Investigates how embodiment, aesthetic performance, and ritual (*li*) shape cognitive attention, perception, and emotional attunement. | Michael Puett, *To Become a God: Cosmology, Sacrifice, and Self-Divinization in Early China* (Harvard University Press)<br>- Amy Olberding, *Moral Exemplars in the Analects: The Good Person Is That* (Routledge) |
 
-| Topic | Resource |
-| --- | --- |
-| Chinese vs Western philosophy | [Bryan Van Norden & Jay Garfield, *Engaging Buddhism*](https://plato.stanford.edu/entries/comparphil-chiwes/) (SEP comparative) |
-| Global philosophy | [SEP “Comparative Philosophy”](https://plato.stanford.edu/entries/comparphil-chiwes/) |
+---
+
+## Political Philosophy, Modern New Confucianism, and Contemporary Theory
+
+Investigates early and late imperial political statecraft, institutional critique, the 20th-century New Confucian philosophical renaissance, and contemporary models of governance.
+
+| Topic | Why Study | Resources |
+| --- | --- | --- |
+| Classical Political Statecraft & Realism | Examines institutional power (*shi*), administrative techniques (*shu*), and rule of law (*fa*) in Warring States realpolitik. | Yuri Pines, *Envisioning Eternal Empire: Chinese Political Thought of the Warring States Era* (University of Hawaii Press)<br>- Han Feizi, *Han Feizi: Basic Writings*, trans. Burton Watson (Columbia University Press) |
+| Late Imperial Constitutional Critique | Analyzes late Ming and early Qing systemic critiques of autocratic despotism and the development of institutional checks on monarchical power. | Huang Zongxi, *Waiting for the Dawn: A Plan for the Prince (Mingyi Daifanglu)*, trans. Wm. Theodore de Bary (Columbia University Press)<br>- Youngmin Kim, *A History of Chinese Political Thought* (Polity Press) |
+| 20th-Century Modern New Confucianism | Explores how 20th-century thinkers (Mou Zongsan, Tang Junyi, Xiong Shili) reconstructed Confucian metaphysics using Kantian, Hegelian, and Yogacara conceptual frameworks. | Mou Zongsan, *Nineteen Lectures on Chinese Philosophy and World Philosophy*, trans. Jason Cliver & Bryan Van Norden (Hackett Publishing)<br>- Sebastien Billioud, *Thinking Through Confucian Modernity* (Brill)<br>- [SEP: “Contemporary Chinese Philosophy”](https://plato.stanford.edu/entries/chinese-contemporary/) |
+| Contemporary Political Confucianism & Governance | Investigates current scholarly debates on political meritocracy, deliberative Confucian perfectionism, human rights, and constitutional democracy. | Joseph Chan, *Confucian Perfectionism: A Deliberative Stance* (Princeton University Press)<br>- Daniel A. Bell, *The China Model: Political Meritocracy and the Limits of Democracy* (Princeton University Press)<br>- Stephen C. Angle, *Contemporary Confucian Political Philosophy* (Polity Press) |
