@@ -9,8 +9,6 @@ A curated collection of field-defining monographs, seminal essays, and transform
 - [Seminal Essays & Interpretive Breakthroughs](#seminal-essays--interpretive-breakthroughs)
 - [Modern Reconstructions, Role Ethics, & Contemporary Political Theory](#modern-reconstructions-role-ethics--contemporary-political-theory)
 
----
-
 ## Foundations & Classical Reconstructions (Pre-Qin & Han)
 
 Landmark analytical and historical works that transformed modern understandings of ancient Chinese disputation, cosmological emergence, and semantic theory.
@@ -22,8 +20,6 @@ Landmark analytical and historical works that transformed modern understandings 
 | *Thinking Through Confucius* | David L. Hall & Roger T. Ames | Philosophical Monograph | Pioneered the non-transcendental, process-oriented, and aesthetic interpretive model of classical Confucianism, emphasizing contextual personhood and ritual harmony. |
 | *A Daoist Theory of Chinese Thought: A Philosophical Interpretation* | Chad Hansen | Philosophical Monograph | A groundbreaking, provocative semantic critique arguing that classical Chinese philosophy centers on pragmatic action-guiding discourse (*dao*) rather than Western representational truth. |
 | *To Become a God: Cosmology, Sacrifice, and Self-Divinization in Early China* | Michael Puett | Historical Monograph | Challenges the common assumption of natural organic harmony in early China, demonstrating that cosmology and sacrifice were fierce battlegrounds over human and divine agency. |
-
----
 
 ## Medieval Ontology, Xuanxue, & Buddhist Dialectics (Wei-Jin to Tang)
 
@@ -37,8 +33,6 @@ Field-defining philosophical investigations into post-Han ontology, Chinese Madh
 | *Buddhist Phenomenology: A Philosophical Investigation of Yogacara Buddhism and the Ch'eng Wei-shih Lun* | Dan Lusthaus | Landmark Monograph | A bridge between Indian-Chinese Yogacara epistemology and Western phenomenological traditions (Husserl and Merleau-Ponty), reframing Consciousness-Only as an epistemic critique rather than idealism. |
 | *Seeing through Zen: Encounter, Transformation, and Genealogy in Chinese Chan Buddhism* | John R. McRae | Historical/Critical Monograph | Demystifies Chan romanticism by analyzing the performative and pedagogical logic of encounter dialogues (*gong'an*) and lineage construction. |
 
----
-
 ## Neo-Confucian Metaphysics & Moral Psychology (Song to Qing)
 
 Foundational works analyzing the theoretical synthesis of Song, Yuan, Ming, and early Qing thinkers.
@@ -50,8 +44,6 @@ Foundational works analyzing the theoretical synthesis of Song, Yuan, Ming, and 
 | *Waiting for the Dawn: A Plan for the Prince (Mingyi Daifanglu)* | Huang Zongxi (trans. Wm. Theodore de Bary) | Primary Text & Critical Monograph | The seminal late-Ming constitutional treatise offering a radical critique of imperial autocracy and articulating institutional checks on sovereign power. |
 | *The Religious Dimension of Confucianism* | Rodney L. Taylor | Monograph | Illuminates the profound ultimate concern, spiritual praxis, and contemplative depth embedded within Neo-Confucian self-transformation. |
 
----
-
 ## Seminal Essays & Interpretive Breakthroughs
 
 Influential short monographs, essay collections, and breakthrough papers that altered modern scholarly discourse.
@@ -62,8 +54,6 @@ Influential short monographs, essay collections, and breakthrough papers that al
 | *Mencius and Early Chinese Thought* | Kwong-loi Shun | Landmark Monograph | The most linguistically and conceptually thorough analytical study of Mencius's moral psychology, human nature (*xing*), and ethical sprouting theory. |
 | *Essays on Skepticism, Relativism, and Ethics in the Zhuangzi* | Paul Kjellberg & Philip J. Ivanhoe (eds.) | Seminal Essay Collection | A defining anthology gathering diverse analytical perspectives on radical semantic skepticism, perspectival relativism, and therapeutic mysticism in the *Zhuangzi*. |
 | *Ritual and Deference: Extending Chinese Philosophy in a Comparative Context* | David L. Hall & Roger T. Ames | Essay Collection | Articulates the philosophical significance of deference, aesthetic order, and relational sociality in contrast to Western individualistic rights models. |
-
----
 
 ## Modern Reconstructions, Role Ethics, & Contemporary Political Theory
 

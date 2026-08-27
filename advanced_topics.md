@@ -9,8 +9,6 @@ Specialization tracks designed for students who have completed the core undergra
 - [Moral Psychology, Virtue Ethics, and Self-Cultivation](#moral-psychology-virtue-ethics-and-self-cultivation): Probes affective cultivation, moral sentimentalism vs. constructivism, relational selfhood, and feminist/care-ethics reconstructions.
 - [Political Philosophy, Modern New Confucianism, and Contemporary Theory](#political-philosophy-modern-new-confucianism-and-contemporary-theory): Examines statecraft, imperial constitutionalism, 20th-century New Confucian metaphysics, and modern debates over meritocracy and democracy.
 
----
-
 ## Early Medieval Philosophy, Xuanxue, and Daoist Metaphysics
 
 Investigates the intellectual transformation of the Wei-Jin period (220–420 CE), where thinkers shifted focus from Han cosmological teleology to fundamental ontology, hermeneutical commentary, and the nature of non-being.
@@ -21,8 +19,6 @@ Investigates the intellectual transformation of the Wei-Jin period (220–420 CE
 | Guo Xiang & Immanent Pluralism | Examines Guo Xiang's rejection of a transcendent root, developing a radical philosophy of self-transformation (*ziran*) and solitary emergence (*duhua*). | Brook Ziporyn, *The Penumbra Unbound: The Neo-Taoist Philosophy of Guo Xiang* (SUNY Press)<br>- Richard John Lynn (trans.), *Zhuangzi: A New Translation of the Sayings of Master Zhuang as Interpreted by Guo Xiang* (Columbia University Press)<br>- [IEP: “Guo Xiang”](https://iep.utm.edu/guoxiang/) |
 | Wei-Jin Aesthetics & Pure Conversation | Explores the existential and aesthetic rebellion of the Seven Sages of the Bamboo Grove, interrogating the dialectic between natural spontaneity (*ziran*) and social moral codes (*mingjiao*). | Richard B. Mather (trans.), *Shih-shuo Hsin-yü: A New Account of Tales of the World* (University of Michigan Press)<br>- David Chai (ed.), *Dao Companion to Xuanxue (Neo-Daoism)* (Springer) |
 | Daoist Internal Alchemy (Neidan) & Sacred Metaphysics | Analyzes how classical Daoist naturalism evolved into complex cosmological, physiological, and meditative systems of self-transcendence. | Fabrizio Pregadio, *The Seal of the Unity of the Three: A Study and Translation of the Cantong qi* (Golden Elixir Press)<br>- Livia Kohn, *Early Daoist Meditation* (University of Hawaii Press)<br>- [SEP: “Religious Daoism”](https://plato.stanford.edu/entries/daoism-religion/) |
-
----
 
 ## Advanced Chinese Buddhist Philosophy & Epistemology
 
@@ -36,8 +32,6 @@ Focuses on the technical philosophical systems that emerged as Indian Buddhist t
 | Huayan Mereology & Intersubjectivity | Analyzes the ontology of universal interpenetration (*shishi wu'ai*) and Fazang's sophisticated relation between universal Principle (*li*) and concrete Phenomena (*shi*). | Francis H. Cook, *Hua-yen Buddhism: The Jewel Net of Indra* (Penn State University Press)<br>- Fazang, *Treatise on the Golden Lion* (in Wing-tsit Chan, *A Source Book in Chinese Philosophy*, Princeton University Press)<br>- [SEP: “Huayan Buddhism”](https://plato.stanford.edu/entries/buddhism-huayan/) |
 | Chan Language Skepticism & Gong'an Hermeneutics | Investigates Chan epistemological paradoxes, the deconstructive role of encounter dialogue, and the tension between sudden enlightenment and pedagogical tradition. | John R. McRae, *Seeing through Zen: Encounter, Transformation, and Genealogy in Chinese Chan Buddhism* (University of California Press)<br>- Dale S. Wright, *Philosophical Meditations on Zen Buddhism* (Cambridge University Press)<br>- [SEP: “Chan Buddhism”](https://plato.stanford.edu/entries/buddhism-chan/) |
 
----
-
 ## Logic, Philosophy of Language, and Epistemology
 
 Examines classical and medieval treatments of semantic reference, indexicals, disputation (*bian*), paradox, skepticism, and formal structures of analogical reasoning.
@@ -49,8 +43,6 @@ Examines classical and medieval treatments of semantic reference, indexicals, di
 | Zhuangzian Epistemic Relativism & Perspectivism | Evaluates radical semantic skepticism, the limits of discursive distinction-making, and contextualist theories of knowledge in the *Qiwulun*. | Chad Hansen, *A Daoist Theory of Chinese Thought: A Philosophical Interpretation* (Oxford University Press)<br>- Paul Kjellberg & Philip J. Ivanhoe (eds.), *Essays on Skepticism, Relativism, and Ethics in the Zhuangzi* (SUNY Press) |
 | Contemporary Chinese Philosophy of Language | Evaluates technical modern debates concerning mass nouns, truth-theories in Classical Chinese, and cross-linguistic semantics. | Chad Hansen, *Language and Logic in Ancient China* (University of Michigan Press)<br>- Bo Mou (ed.), *Comparative Approaches to Chinese Philosophy* (Routledge)<br>- [SEP: “Epistemology in Chinese Philosophy”](https://plato.stanford.edu/entries/chinese-epistemology/) |
 
----
-
 ## Moral Psychology, Virtue Ethics, and Self-Cultivation
 
 Examines the psychological mechanics of ethical transformation, affective appraisal, the moral role of ritual, and contemporary dialogues with Western virtue ethics and feminist care theory.
@@ -61,8 +53,6 @@ Examines the psychological mechanics of ethical transformation, affective apprai
 | Neo-Confucian Moral Psychology | Explores how Song-Ming thinkers integrated Buddhist psychology to explain moral failure, self-deception, the unity of knowing and acting, and the realization of original mind. | Stephen C. Angle, *Sagehood: The Contemporary Significance of Neo-Confucian Philosophy* (Oxford University Press)<br>- Philip J. Ivanhoe, *Confucian Moral Self-Cultivation* (Hackett Publishing)<br>- [SEP: “Song-Ming Confucianism”](https://plato.stanford.edu/entries/song-ming-confucianism/) |
 | Confucian Relational Ethics & Contemporary Care Theory | Analyzes Confucian role ethics, filial obligation, and emotional harmony in critical dialogue with contemporary feminist care ethics. | Chenyang Li, *The Confucian Philosophy of Harmony* (Routledge)<br>- Chenyang Li (ed.), *The Sage and the Second Sex: Confucianism, Ethics, and Gender* (Open Court)<br>- Henry Rosemont Jr. & Roger T. Ames, *The Examination of the Self in Role Ethics* (SUNY Press) |
 | Affect, Moral Salience, and Ritual Agency | Investigates how embodiment, aesthetic performance, and ritual (*li*) shape cognitive attention, perception, and emotional attunement. | Michael Puett, *To Become a God: Cosmology, Sacrifice, and Self-Divinization in Early China* (Harvard University Press)<br>- Amy Olberding, *Moral Exemplars in the Analects: The Good Person Is That* (Routledge) |
-
----
 
 ## Political Philosophy, Modern New Confucianism, and Contemporary Theory
 
