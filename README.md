@@ -33,7 +33,6 @@ Practical work is integrated through the [Projects section](projects.md) and may
 Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
 they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md).
 
-
 **[How to contribute](/CONTRIBUTING.html)**
 
 # Communities
@@ -99,7 +98,6 @@ Purpose: To understand why words like *dao*, *li*, *ren*, *qi* have no single En
 | --- | --- |
 | How Classical Chinese Works | [Harvard Chinese Linguistics site: “Classical Chinese Grammar Notes”](https://ealc.fas.harvard.edu/chinese-courses) (related Harvard resources; direct notes may require site navigation) |
 
-
 ### B. How Chinese Texts Are Interpreted
 
 | Subject | Resource |
@@ -131,7 +129,7 @@ Free supplements: SEP entries on Confucius, Mencius, Xunzi (search SEP directly)
 | Thinker | Core Text |
 | --- | --- |
 | Laozi | [*Daodejing* (Ames & Hall translation)](https://archive.org/details/daodejingmakingt0000laoz) (philosophical translation on Internet Archive) |
-| Zhuangzi | [*Zhuangzi: Essential Writings* (Ziporyn or Watson)](https://www.amazon.com/Zhuangzi-Essential-Writings-Selections-Commentaries/dp/0872209113) (Ziporyn essential edition borrow on Internet Archive) |
+| Zhuangzi | [*Zhuangzi: Essential Writings* (Ziporyn or Watson)](https://archive.org/details/thecompleteworksofchuangtzu) (Ziporyn essential edition borrow on Internet Archive) |
 
 ### C. Mohism
 
@@ -170,6 +168,4 @@ This is the *mature Chinese philosophical system*.
 # Code of conduct
 
 [Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
-
-
 
