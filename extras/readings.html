@@ -1,62 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Extra Reading</title>
-<link rel="stylesheet" href="/chinese-philosophy/style.css">
-<meta name="description" content="">
+  <title>Great Readings: Chinese Philosophy</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/chinese-philosophy/">
+  <link rel="canonical" href="https://hocbigg.github.io/chinese-philosophy/extras/readings.html">
+  <meta property="og:title" content="Great Readings: Chinese Philosophy">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/chinese-philosophy/extras/readings.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Extra Reading">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/chinese-philosophy/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: min(60rem, 92vw);
+  padding: 0 0.75rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  word-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 1.75em;
+  margin-bottom: 0.5em;
+  color: var(--fg);
+}
+h1 { font-size: 1.85rem; margin-top: 0.5em; }
+h2 { font-size: 1.45rem; }
+h3 { font-size: 1.2rem; }
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.page-header img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/chinese-philosophy/">Chinese-Philosophy</a>
-<a href="/chinese-philosophy/advanced_topics.html">Advanced Topics</a>
-<a href="/chinese-philosophy/projects.html">Projects</a>
-<a href="/chinese-philosophy/extras/courses.html">Extra Courses</a>
-<a href="/chinese-philosophy/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/chinese-philosophy/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/chinese-philosophy/">Chinese Philosophy</a></li>
+      <li><a href="/chinese-philosophy/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/chinese-philosophy/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/chinese-philosophy/extras/courses.html">Extra Courses</a></li>
+      <li><a href="/chinese-philosophy/resources.html">Resources</a></li>
+      <li><a href="https://github.com/hocbigg/" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="extra-reading">Extra Reading</h1>
-<p>This document consists of great books or articles on Chinese Philosophy.
-Some are here because there is a course covering the same material;
-some are just great books that you should read at some point in your career.</p>
-<p>Once you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
-Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.</p>
-<h2 id="topic">Topic</h2>
-<table>
+  <main id="main-content">
+    <article>
+
+<h1 id="great-readings-chinese-philosophy">Great Readings: Chinese Philosophy</h1>
+<p>A curated collection of field-defining monographs, seminal essays, and transformative paradigm shifts in Chinese and comparative philosophy.</p>
+<h2 id="reading-index">Reading Index</h2>
+<ul>
+<li><a href="#foundations--classical-reconstructions-pre-qin--han">Foundations &amp; Classical Reconstructions (Pre-Qin &amp; Han)</a></li>
+<li><a href="#medieval-ontology-xuanxue--buddhist-dialectics-wei-jin-to-tang">Medieval Ontology, Xuanxue, &amp; Buddhist Dialectics (Wei-Jin to Tang)</a></li>
+<li><a href="#neo-confucian-metaphysics--moral-psychology-song-to-qing">Neo-Confucian Metaphysics &amp; Moral Psychology (Song to Qing)</a></li>
+<li><a href="#seminal-essays--interpretive-breakthroughs">Seminal Essays &amp; Interpretive Breakthroughs</a></li>
+<li><a href="#modern-reconstructions-role-ethics--contemporary-political-theory">Modern Reconstructions, Role Ethics, &amp; Contemporary Political Theory</a></li>
+</ul>
+<h2 id="foundations-classical-reconstructions-pre-qin-han">Foundations &amp; Classical Reconstructions (Pre-Qin &amp; Han)</h2>
+<p>Landmark analytical and historical works that transformed modern understandings of ancient Chinese disputation, cosmological emergence, and semantic theory.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Book title</td>
-<td style="text-align: center;">Author</td>
+<td><a href="https://archive.org/details/disputersoftaoph0000grah" target="_blank" rel="noopener noreferrer"><em>Disputers of the Tao: Philosophical Argument in Ancient China</em></a></td>
+<td>A. C. Graham</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/worldofthoughtin0000schw" target="_blank" rel="noopener noreferrer"><em>The World of Thought in Ancient China</em></a></td>
+<td>Benjamin I. Schwartz</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/thinkingthroughc0000hall" target="_blank" rel="noopener noreferrer"><em>Thinking Through Confucius</em></a></td>
+<td>David L. Hall &amp; Roger T. Ames</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/daoisttheoryofch0000hans" target="_blank" rel="noopener noreferrer"><em>A Daoist Theory of Chinese Thought: A Philosophical Interpretation</em></a></td>
+<td>Chad Hansen</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780674009592" target="_blank" rel="noopener noreferrer"><em>To Become a God: Cosmology, Sacrifice, and Self-Divinization in Early China</em></a></td>
+<td>Michael Puett</td>
 </tr>
 </tbody>
-</table>
-</article>
-</main>
+</table></div>
+<h2 id="medieval-ontology-xuanxue-buddhist-dialectics-wei-jin-to-tang">Medieval Ontology, Xuanxue, &amp; Buddhist Dialectics (Wei-Jin to Tang)</h2>
+<p>Field-defining philosophical investigations into post-Han ontology, Chinese Madhyamaka, Tiantai dialectics, Huayan mereology, and Chan deconstruction.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780791456620" target="_blank" rel="noopener noreferrer"><em>The Penumbra Unbound: The Neo-Taoist Philosophy of Guo Xiang</em></a></td>
+<td>Brook Ziporyn</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/beingambiguityph0000zipo" target="_blank" rel="noopener noreferrer"><em>Being and Ambiguity: Philosophical Experiments with Tiantai Buddhism</em></a></td>
+<td>Brook Ziporyn</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780271021904" target="_blank" rel="noopener noreferrer"><em>Hua-Yen Buddhism: The Jewel Net of Indra</em></a></td>
+<td>Francis H. Cook</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780415406109" target="_blank" rel="noopener noreferrer"><em>Buddhist Phenomenology: A Philosophical Investigation of Yogacara Buddhism and the Ch'eng Wei-shih Lun</em></a></td>
+<td>Dan Lusthaus</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/seeingthroughzen0000mcra" target="_blank" rel="noopener noreferrer"><em>Seeing through Zen: Encounter, Transformation, and Genealogy in Chinese Chan Buddhism</em></a></td>
+<td>John R. McRae</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="neo-confucian-metaphysics-moral-psychology-song-to-qing">Neo-Confucian Metaphysics &amp; Moral Psychology (Song to Qing)</h2>
+<p>Foundational works analyzing the theoretical synthesis of Song, Yuan, Ming, and early Qing thinkers.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780195385151" target="_blank" rel="noopener noreferrer"><em>Sagehood: The Contemporary Significance of Neo-Confucian Philosophy</em></a></td>
+<td>Stephen C. Angle</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/confucianmoralse0000ivan_2ed" target="_blank" rel="noopener noreferrer"><em>Confucian Moral Self-Cultivation</em></a></td>
+<td>Philip J. Ivanhoe</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780231080972" target="_blank" rel="noopener noreferrer"><em>Waiting for the Dawn: A Plan for the Prince (Mingyi Daifanglu)</em></a></td>
+<td>Huang Zongxi (trans. Wm. Theodore de Bary)</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/centralitycommon0000tuwe" target="_blank" rel="noopener noreferrer"><em>Centrality and Commonality: An Essay on Confucian Religiousness</em></a></td>
+<td>Tu Wei-ming</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780674910157" target="_blank" rel="noopener noreferrer"><em>The Trouble with Confucianism</em></a></td>
+<td>Wm. Theodore de Bary</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="seminal-essays-interpretive-breakthroughs">Seminal Essays &amp; Interpretive Breakthroughs</h2>
+<p>Influential short monographs, essay collections, and breakthrough papers that altered modern scholarly discourse.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://archive.org/details/confuciusthesecul0000fing" target="_blank" rel="noopener noreferrer"><em>Confucius: The Secular as Sacred</em></a></td>
+<td>Herbert Fingarette</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780887060069" target="_blank" rel="noopener noreferrer"><em>Confucian Thought: Selfhood as Creative Transformation</em></a></td>
+<td>Tu Wei-ming</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780804727884" target="_blank" rel="noopener noreferrer"><em>Mencius and Early Chinese Thought</em></a></td>
+<td>Kwong-loi Shun</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780791427569" target="_blank" rel="noopener noreferrer"><em>Essays on Skepticism, Relativism, and Ethics in the Zhuangzi</em></a></td>
+<td>Paul Kjellberg &amp; Philip J. Ivanhoe (eds.)</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780791474587" target="_blank" rel="noopener noreferrer"><em>Ritual and Deference: Extending Chinese Philosophy in a Comparative Context</em></a></td>
+<td>David L. Hall &amp; Roger T. Ames</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="modern-reconstructions-role-ethics-contemporary-political-theory">Modern Reconstructions, Role Ethics, &amp; Contemporary Political Theory</h2>
+<p>Major twentieth-century syntheses and twenty-first-century applied political and ethical frameworks.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781624669385" target="_blank" rel="noopener noreferrer"><em>Nineteen Lectures on Chinese Philosophy and World Philosophy</em></a></td>
+<td>Mou Zongsan (trans. Jason Cliver &amp; Bryan W. Van Norden)</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780824835767" target="_blank" rel="noopener noreferrer"><em>Confucian Role Ethics: A Vocabulary</em></a></td>
+<td>Roger T. Ames</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780691158617" target="_blank" rel="noopener noreferrer"><em>Confucian Perfectionism: A Deliberative Stance</em></a></td>
+<td>Joseph Chan</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/chinamodelpoliti0000bell" target="_blank" rel="noopener noreferrer"><em>The China Model: Political Meritocracy and the Limits of Democracy</em></a></td>
+<td>Daniel A. Bell</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780745661308" target="_blank" rel="noopener noreferrer"><em>Contemporary Confucian Political Philosophy: Toward Progressive Confucianism</em></a></td>
+<td>Stephen C. Angle</td>
+</tr>
+</tbody>
+</table></div>
+    </article>
+  </main>
 
 </body>
 </html>

@@ -1,210 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/chinese-philosophy/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics: Specialization Tracks in Chinese Philosophy</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/chinese-philosophy/">
+  <link rel="canonical" href="https://hocbigg.github.io/chinese-philosophy/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics: Specialization Tracks in Chinese Philosophy">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/chinese-philosophy/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/chinese-philosophy/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: min(60rem, 92vw);
+  padding: 0 0.75rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  word-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 1.75em;
+  margin-bottom: 0.5em;
+  color: var(--fg);
+}
+h1 { font-size: 1.85rem; margin-top: 0.5em; }
+h2 { font-size: 1.45rem; }
+h3 { font-size: 1.2rem; }
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.page-header img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/chinese-philosophy/">Chinese-Philosophy</a>
-<a href="/chinese-philosophy/advanced_topics.html">Advanced Topics</a>
-<a href="/chinese-philosophy/projects.html">Projects</a>
-<a href="/chinese-philosophy/extras/courses.html">Extra Courses</a>
-<a href="/chinese-philosophy/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/chinese-philosophy/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/chinese-philosophy/">Chinese Philosophy</a></li>
+      <li><a href="/chinese-philosophy/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/chinese-philosophy/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/chinese-philosophy/extras/courses.html">Extra Courses</a></li>
+      <li><a href="/chinese-philosophy/resources.html">Resources</a></li>
+      <li><a href="https://github.com/hocbigg/" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
-<h1 id="advanced-topics">Advanced Topics</h1>
+  <main id="main-content">
+    <article>
+
+<h1 id="advanced-topics-specialization-tracks-in-chinese-philosophy">Advanced Topics: Specialization Tracks in Chinese Philosophy</h1>
+<p>Specialization tracks designed for self-directed learners who have completed the core undergraduate curriculum and wish to pursue technical subfields, advanced textual methodologies, and contemporary applications in Chinese philosophy.</p>
+<h3 id="specialization-index">Specialization Index</h3>
 <ul>
-<li><a href="#han-synthesis">Han Synthesis</a></li>
-<li><a href="#buddhism-enters-china">Buddhism Enters China</a><ul>
-<li><a href="#a-indian-foundations-for-chinese-buddhism">A. Indian Foundations for Chinese Buddhism</a></li>
-<li><a href="#b-chinese-buddhist-schools">B. Chinese Buddhist Schools</a></li>
+<li><a href="#early-medieval-philosophy-xuanxue-and-daoist-metaphysics">Early Medieval Philosophy, Xuanxue, and Daoist Metaphysics</a> - Investigates post-Han ontological revolutions, the dialectic of non-being (<em>wu</em>) and being (<em>you</em>), commentarial philosophy, and internal alchemy (<em>neidan</em>).</li>
+<li><a href="#advanced-chinese-buddhist-philosophy-and-epistemology">Advanced Chinese Buddhist Philosophy and Epistemology</a> - Examines the technical sinification of Mahāyāna systems, focusing on Sanlun Madhyamaka, Faxiang Yogācāra phenomenology, Tiantai dialectics, Huayan mereology, and Chan hermeneutics.</li>
+<li><a href="#logic-philosophy-of-language-and-epistemology">Logic, Philosophy of Language, and Epistemology</a> - Analyzes semantic reference, disputation (<em>bian</em>), nominalist paradoxes, Mohist formal epistemologies, and cross-linguistic theories of truth.</li>
+<li><a href="#moral-psychology-virtue-ethics-and-self-cultivation">Moral Psychology, Virtue Ethics, and Self-Cultivation</a> - Explores affective appraisal, moral constructivism versus sentimentalism, embodied ritual performance, relational selfhood, and feminist care reconstructions.</li>
+<li><a href="#political-philosophy-modern-new-confucianism-and-contemporary-theory">Political Philosophy, Modern New Confucianism, and Contemporary Theory</a> - Investigates imperial institutional statecraft, late Ming constitutional critique, 20th-century New Confucian metaphysics, and contemporary debates over political meritocracy and democracy.</li>
 </ul>
-</li>
-<li><a href="#medieval-daoism">Medieval Daoism</a></li>
-<li><a href="#ethics--moral-psychology">Ethics &amp; Moral Psychology</a></li>
-<li><a href="#language-logic--epistemology">Language, Logic &amp; Epistemology</a></li>
-<li><a href="#xi-comparative-philosophy">XI. Comparative Philosophy</a></li>
-</ul>
-<p>The remaining sections are deeper dives or branch extensions. You do not need to study all of them. Pick 1–3 tracks that interest you most after finishing the core path.</p>
-<ul>
-<li>V. Han Synthesis → Interested in how Confucianism became a state ideology and cosmology?</li>
-<li>VI. Buddhism Enters China → Want to understand how Indian Buddhism was transformed in China and gave rise to Chan (Zen)?</li>
-<li>VII. Medieval Daoism → Curious about religious Daoism and its later metaphysical developments?</li>
-<li>IX. Ethics &amp; Moral Psychology → Want to focus on contemporary relevance of Confucian virtue ethics and emotional cultivation?</li>
-<li>X. Language, Logic &amp; Epistemology → Interested in technical questions about language, reasoning, and knowledge in Chinese thought?</li>
-<li>XI. Comparative Philosophy → Want to actively compare Chinese philosophy with Western or other global traditions?</li>
-</ul>
-<h2 id="han-synthesis">Han Synthesis</h2>
-<p>Confucianism becomes a state metaphysical system.</p>
-<table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Dong Zhongshu</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/han-dynasty/"><em>Dong Zhongshu and the Chunqiu Fanlu</em></a> (SEP Han overview)</td>
-</tr>
-<tr>
-<td>Confucian cosmology</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/han-dynasty/">SEP “Han Confucianism”</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="buddhism-enters-china">Buddhism Enters China</h2>
-<h3 id="a-indian-foundations-for-chinese-buddhism">A. Indian Foundations (for Chinese Buddhism)</h3>
-<table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Core Buddhist philosophy</td>
-<td><a href="">Mark Siderits, <em>Buddhism as Philosophy</em></a> (related SEP)</td>
-</tr>
-<tr>
-<td>Free background</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/buddha/">SEP Buddha</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="b-chinese-buddhist-schools">B. Chinese Buddhist Schools</h3>
-<table>
-<thead>
-<tr>
-<th>School</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sanlun (Madhyamaka)</td>
-<td><a href="">SEP “Madhyamaka in China”</a></td>
-</tr>
-<tr>
-<td>Yogācāra</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/yogacara/">SEP “Yogācāra”</a></td>
-</tr>
-<tr>
-<td>Chan (Zen)</td>
-<td><a href="">John McRae, <em>Seeing Through Zen</em></a> (SEP Chan context)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="medieval-daoism">Medieval Daoism</h2>
-<table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Religious &amp; metaphysical Daoism</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/daoism-religion/">Livia Kohn, <em>Daoism and Chinese Culture</em></a> (SEP religious Daoism)</td>
-</tr>
-<tr>
-<td>Free supplement</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/daoism-religion/">SEP “Daoism (Later Developments)”</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="ethics-moral-psychology">Ethics &amp; Moral Psychology</h2>
-<table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Confucian virtue ethics</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/confucianmoralse0000ivan_2ed"><em>Confucian Moral Self-Cultivation</em> (Tu Weiming)</a> (SEP ethics context)</td>
-</tr>
-<tr>
-<td>Emotion &amp; ritual</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/confucianmoralse0000ivan_2ed">Philip Ivanhoe, <em>Confucianism and Emotion</em></a> (related)</td>
-</tr>
-<tr>
-<td>Free background</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/confucianmoralse0000ivan_2ed">SEP “Confucian Ethics”</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="language-logic-epistemology">Language, Logic &amp; Epistemology</h2>
-<table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Classical Chinese logic</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/chinese-logic-language/">Chad Hansen, <em>Language and Logic in Ancient China</em> (JSTOR)</a> (SEP logic entry)</td>
-</tr>
-<tr>
-<td>Zhuangzi &amp; skepticism</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/zhuangzi/">SEP “Zhuangzi”</a></td>
-</tr>
-<tr>
-<td>Buddhist epistemology</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="xi-comparative-philosophy">XI. Comparative Philosophy</h2>
-<table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Chinese vs Western philosophy</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/comparphil-chiwes/">Bryan Van Norden &amp; Jay Garfield, <em>Engaging Buddhism</em></a> (SEP comparative)</td>
-</tr>
-<tr>
-<td>Global philosophy</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://plato.stanford.edu/entries/comparphil-chiwes/">SEP “Comparative Philosophy”</a></td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="early-medieval-philosophy-xuanxue-and-daoist-metaphysics">Early Medieval Philosophy, Xuanxue, and Daoist Metaphysics</h2>
+<p>Investigates the intellectual transformation of the Wei-Jin period (220–420 CE), where thinkers shifted focus from Han cosmological teleology to fundamental ontology, hermeneutical commentary, and the nature of non-being.</p>
+<p>Xuanxue Ontology and Meontology: <a href="https://books.google.com/books?isbn=9780231105811" target="_blank" rel="noopener noreferrer">The Classic of the Way and Virtue: A New Translation of the Tao-te ching of Laozi as Interpreted by Wang Bi (Richard John Lynn, trans. / Columbia University Press)</a> - Unabridged translation demonstrating how Wang Bi reconstructed early Daoism into a rigorous ontology grounded in primordial non-being (<em>benwu</em>).</p>
+<p>Guo Xiang and Immanent Pluralism: <a href="https://books.google.com/books?isbn=9780791456620" target="_blank" rel="noopener noreferrer">The Penumbra Unbound: The Neo-Taoist Philosophy of Guo Xiang (Brook Ziporyn / SUNY Press)</a> - The definitive philosophical study of Guo Xiang's rejection of an ultimate metaphysical root in favor of self-so (<em>ziran</em>), spontaneous emergence (<em>duhua</em>), and complete immanence.</p>
+<p>Wei-Jin Aesthetics and Pure Conversation: <a href="https://books.google.com/books?isbn=9780892641550" target="_blank" rel="noopener noreferrer">Shih-shuo Hsin-yü: A New Account of Tales of the World (Richard B. Mather, trans. / University of Michigan Press)</a> - The premier sourcebook documenting the aesthetic rebellion, psychological individuality, and philosophical salons (<em>qingtan</em>) of the Wei-Jin literati.</p>
+<p>Internal Alchemy (Neidan) and Somatic Metaphysics: <a href="https://books.google.com/books?isbn=9780984308286" target="_blank" rel="noopener noreferrer">The Seal of the Unity of the Three: A Study and Translation of the Cantong qi (Fabrizio Pregadio / Golden Elixir Press)</a> - Critical edition and study of the foundational text of internal alchemy, analyzing how cosmic cycles and Yijing hexagrams were mapped onto physiological self-cultivation.</p>
+<h2 id="advanced-chinese-buddhist-philosophy-and-epistemology">Advanced Chinese Buddhist Philosophy and Epistemology</h2>
+<p>Examines the technical philosophical systems that emerged as Indian Buddhist theories of emptiness, consciousness, and hermeneutics were systematically naturalized in early and medieval China.</p>
+<p>Chinese Madhyamaka (Sanlun) and Sengzhao's Paradox of Motion: <a href="https://www.bdkamerica.org/product/three-short-treatises-by-vasubandhu-sengzhao-and-zongmi/" target="_blank" rel="noopener noreferrer">Three Short Treatises by Vasubandhu, Sengzhao, and Zongmi (Rafal Felbur, trans. / BDK America)</a> - Free open-access translation of Sengzhao's Zhaolun, articulating the earliest mature Chinese synthesis of Madhyamaka emptiness, non-duality, and the stillness of motion.</p>
+<p>East Asian Yogācāra (Consciousness-Only Epistemology): <a href="https://www.bdkamerica.org/product/three-texts-on-consciousness-only/" target="_blank" rel="noopener noreferrer">Three Texts on Consciousness Only (Francis H. Cook, trans. / BDK America)</a> - Free open-access primary translation of Xuanzang's Cheng Weishi Lun, the encyclopedic treatise on the eight consciousnesses, storehouse seeds, and cognitive transformation.</p>
+<p>East Asian Yogācāra (Consciousness-Only Epistemology): <a href="https://books.google.com/books?isbn=9780415406109" target="_blank" rel="noopener noreferrer">Buddhist Phenomenology: A Philosophical Investigation of Yogacara Buddhism and the Ch'eng Wei-shih Lun (Dan Lusthaus / Routledge)</a> - A comprehensive reconstruction of Xuanzang's system as an epistemological phenomenology of lived experience rather than metaphysical idealism.</p>
+<p>Tiantai Dialectics and the Threefold Truth: <a href="https://books.google.com/books?isbn=9780253021083" target="_blank" rel="noopener noreferrer">Emptiness and Omnipresence: An Essential Introduction to Tiantai Buddhism (Brook Ziporyn / Indiana University Press)</a> - An advanced philosophical analysis of Zhiyi's Threefold Truth (emptiness, conventionality, and the middle) and the doctrine of mutual inter-inclusion of all phenomena.</p>
+<p>Huayan Mereology and Universal Interpenetration: <a href="https://books.google.com/books?isbn=9780271021904" target="_blank" rel="noopener noreferrer">Hua-Yen Buddhism: The Jewel Net of Indra (Francis H. Cook / Pennsylvania State University Press)</a> - The classic monograph analyzing Fazang's mereological system of identity, difference, and the total interpenetration of Principle (<em>li</em>) and phenomena (<em>shi</em>).</p>
+<p>Chan Hermeneutics and Language Skepticism: <a href="https://books.google.com/books?isbn=9780521590105" target="_blank" rel="noopener noreferrer">Philosophical Meditations on Zen Buddhism (Dale S. Wright / Cambridge University Press)</a> - An advanced inquiry exploring how Chan encounter dialogues (<em>gong'an</em>) deploy language skepticism and rhetorical irony to dismantle epistemic reification.</p>
+<h2 id="logic-philosophy-of-language-and-epistemology">Logic, Philosophy of Language, and Epistemology</h2>
+<p>Analyzes classical and medieval Chinese treatments of semantic reference, disputation (<em>bian</em>), paradoxical reasoning, epistemic skepticism, and cross-linguistic semantics.</p>
+<p>The School of Names (Mingjia) and Semantic Paradoxes: <a href="https://books.google.com/books?isbn=9780521571432" target="_blank" rel="noopener noreferrer">Science and Civilisation in China, Volume 7, Part 1: Language and Logic (Christoph Harbsmeier / Cambridge University Press)</a> - An exhaustive linguistic and logical analysis of classical Chinese syntax, semantic definitions, and explicit argumentation structures.</p>
+<p>The Later Mohist Canons: Epistemology and Dialectics: <a href="https://books.google.com/books?isbn=9789622011427" target="_blank" rel="noopener noreferrer">Later Mohist Logic, Ethics and Science (A. C. Graham / The Chinese University of Hong Kong Press)</a> - The landmark reconstruction and translation recovering early China's most rigorous classical treatises on formal disputation, semantic criteria (<em>lei</em>), and analogical extension (<em>tui</em>).</p>
+<p>Zhuangzian Perspectivism and Epistemic Skepticism: <a href="https://books.google.com/books?isbn=9780791428924" target="_blank" rel="noopener noreferrer">Essays on Skepticism, Relativism, and Ethics in the Zhuangzi (Paul Kjellberg &amp; Philip J. Ivanhoe, eds. / SUNY Press)</a> - A specialized collection of essays examining the epistemological subtleties of the Qiwulun, debating whether Zhuangzi advances radical skepticism, perspectivism, or contextualism.</p>
+<p>Comparative Semantics and Classical Philosophy of Language: <a href="https://books.google.com/books?isbn=9780472100200" target="_blank" rel="noopener noreferrer">Language and Logic in Ancient China (Chad Hansen / University of Michigan Press)</a> - A seminal work establishing the mass-noun hypothesis and defending a part-whole mereological model of classical Chinese semantics against sentence-based Western frameworks.</p>
+<h2 id="moral-psychology-virtue-ethics-and-self-cultivation">Moral Psychology, Virtue Ethics, and Self-Cultivation</h2>
+<p>Explores the cognitive, affective, and bodily mechanics of ethical self-transformation, contemporary reconstructions of Confucian virtue theory, relational selfhood, and intersections with feminist care ethics.</p>
+<p>Sentimentalism vs. Constructivism in Early Confucianism: <a href="https://books.google.com/books?isbn=9780804727884" target="_blank" rel="noopener noreferrer">Mencius and Early Chinese Thought (Kwong-loi Shun / Stanford University Press)</a> - A definitive analytic investigation into Mencian moral psychology, unpacking affective sprouts (<em>duan</em>), moral volition, and the cultivation of the heart-mind (<em>xin</em>).</p>
+<p>Neo-Confucian Moral Psychology and Contemporary Virtue Ethics: <a href="https://books.google.com/books?isbn=9780199922239" target="_blank" rel="noopener noreferrer">Sagehood: The Contemporary Significance of Neo-Confucian Philosophy (Stephen C. Angle / Oxford University Press)</a> - A philosophical reconstruction demonstrating how Song-Ming theories of moral failure, self-deception, and psychological unity inform contemporary virtue ethics.</p>
+<p>Relational Selfhood, Role Ethics, and Feminist Care Reconstructions: <a href="https://books.google.com/books?isbn=9780812694192" target="_blank" rel="noopener noreferrer">The Sage and the Second Sex: Confucianism, Ethics, and Gender (Chenyang Li, ed. / Open Court)</a> - The pioneer volume bringing Confucian relational ethics, family harmony, and moral hierarchy into critical dialogue with feminist care ethics.</p>
+<p>Relational Selfhood, Role Ethics, and Feminist Care Reconstructions: <a href="https://books.google.com/books?isbn=9780824835767" target="_blank" rel="noopener noreferrer">Confucian Role Ethics: A Vocabulary (Roger T. Ames / University of Hawaii Press)</a> - A systematic defense of Confucian ethics as an irreducible role-based morality rooted in narrative context, interpersonal duty, and performative relation.</p>
+<p>Affect, Demeanor, and Moral Exemplarity: <a href="https://books.google.com/books?isbn=9781138062771" target="_blank" rel="noopener noreferrer">Moral Exemplars in the Analects: The Good Person Is That (Amy Olberding / Routledge)</a> - An exploration of how aesthetic comportment, emotional tone, and everyday etiquette construct moral authority and guide interpersonal interaction.</p>
+<h2 id="political-philosophy-modern-new-confucianism-and-contemporary-theory">Political Philosophy, Modern New Confucianism, and Contemporary Theory</h2>
+<p>Investigates early and late imperial political statecraft, institutional critique, the 20th-century New Confucian philosophical renaissance, and contemporary models of governance.</p>
+<p>Imperial Statecraft and Ideological Realism: <a href="https://books.google.com/books?isbn=9780824832759" target="_blank" rel="noopener noreferrer">Envisioning Eternal Empire: Chinese Political Thought of the Warring States Era (Yuri Pines / University of Hawaii Press)</a> - A comprehensive analysis of how Warring States political theorists forged the ideological architecture of unified imperial monarchism and bureaucratic management.</p>
+<p>Late Imperial Institutional Critique and Constitutionalism: <a href="https://books.google.com/books?isbn=9780231080972" target="_blank" rel="noopener noreferrer">Waiting for the Dawn: A Plan for the Prince (Huang Zongxi / Wm. Theodore de Bary, trans. / Columbia University Press)</a> - The seminal 17th-century treatise mounting a radical critique of dynastic despotism while proposing legal checks on autocratic power and autonomous public academies.</p>
+<p>Twentieth-Century Modern New Confucian Metaphysics: <a href="https://books.google.com/books?isbn=9789004278899" target="_blank" rel="noopener noreferrer">Late Works of Mou Zongsan: Selected Essays on Chinese Philosophy (Jason Clower, ed. &amp; trans. / Brill)</a> - Authoritative translation of Mou Zongsan's mature essays, demonstrating his systematic harmonization of Kantian moral philosophy with Confucian intellectual intuition (<em>liangzhi</em>).</p>
+<p>Twentieth-Century Modern New Confucian Metaphysics: <a href="https://plato.stanford.edu/entries/confucianism-modern/" target="_blank" rel="noopener noreferrer">Modern Confucianism (Stanford Encyclopedia of Philosophy)</a> - An open-access survey contextualizing the three generations of New Confucian thinkers (including Xiong Shili, Tang Junyi, and Mou Zongsan) responding to Western political and scientific modernity.</p>
+<p>Contemporary Political Confucianism: Perfectionism and Meritocracy: <a href="https://books.google.com/books?isbn=9780691158617" target="_blank" rel="noopener noreferrer">Confucian Perfectionism: A Political Philosophy for Modern Times (Joseph Chan / Princeton University Press)</a> - A rigorous formulation of moderate Confucian perfectionism that reconciles traditional virtue promotion with civil liberties and democratic institutions.</p>
+<p>Contemporary Political Confucianism: Perfectionism and Meritocracy: <a href="https://books.google.com/books?isbn=9780691173047" target="_blank" rel="noopener noreferrer">The China Model: Political Meritocracy and the Limits of Democracy (Daniel A. Bell / Princeton University Press)</a> - An influential defense of political meritocracy, evaluating institutional frameworks that balance local democratic elections with merit-selected central leadership.</p>
+    </article>
+  </main>
 
 </body>
 </html>

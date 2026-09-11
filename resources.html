@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Resources</title>
+  <meta name="description" content="A lightweight static page by hocbigg.">
+  <meta name="author" content="hocbigg">
+
+  <link rel="canonical" href="https://hocbigg.github.io/chinese-philosophy/resources.html">
+  <meta property="og:title" content="Resources">
+  <meta property="og:description" content="A lightweight static page by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/chinese-philosophy/resources.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+
+  <style>
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: min(60rem, 92vw);
+  padding: 0 0.75rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  word-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 1.75em;
+  margin-bottom: 0.5em;
+  color: var(--fg);
+}
+h1 { font-size: 1.85rem; margin-top: 0.5em; }
+h2 { font-size: 1.45rem; }
+h3 { font-size: 1.2rem; }
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.page-header img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/chinese-philosophy/">Chinese Philosophy</a></li>
+      <li><a href="/chinese-philosophy/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/chinese-philosophy/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/chinese-philosophy/extras/courses.html">Extra Courses</a></li>
+      <li><a href="/chinese-philosophy/resources.html">Resources</a></li>
+      <li><a href="https://github.com/hocbigg/" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
+
+<h1 id="resources">Resources</h1>
+<h2 id="primary-text-repositories-and-digital-concordances">Primary Text Repositories and Digital Concordances</h2>
+<p>Digital libraries and concordance databases that provide searchable full-text corpora, sentence-aligned translations, and critical apparatuses for classical and medieval Chinese philosophical works.</p>
+<ul>
+<li><a href="https://ctext.org/" target="_blank" rel="noopener noreferrer">Chinese Text Project (Donald Sturgeon / ctext.org)</a> - The definitive open-access digital library of pre-modern Chinese thought, featuring full-text search, character concordances, and sentence-aligned English translations.</li>
+<li><a href="https://cbetaonline.dila.edu.tw/" target="_blank" rel="noopener noreferrer">CBETA Online (Chinese Buddhist Electronic Text Association / DILA)</a> - The standard scholarly digital edition of the Chinese Buddhist canon, integrating the Taishō Tripiṭaka and Zokuzōkyō with full-text search, punctuation, and dictionary lookup.</li>
+<li><a href="https://21dzk.l.u-tokyo.ac.jp/SAT2018/" target="_blank" rel="noopener noreferrer">SAT Daizokyo Text Database (University of Tokyo)</a> - A searchable textual database of the 85-volume Taishō Shinshū Daizōkyō complete with critical apparatus, linked directly to digital facsimile images and external Buddhist lexicons.</li>
+<li><a href="https://hanchi.ihp.sinica.edu.tw/" target="_blank" rel="noopener noreferrer">Scripta Sinica (Institute of History and Philology, Academia Sinica)</a> - A massive digital collection of Chinese classical literature, dynastic histories, and philosophical masters with advanced textual search and variant-character matching.</li>
+</ul>
+<h2 id="lexicons-character-dictionaries-and-conceptual-thesauri">Lexicons, Character Dictionaries, and Conceptual Thesauri</h2>
+<p>Specialized dictionaries and conceptual databases designed to analyze classical Chinese philosophical terminology, syntactic patterns, and historical character evolutions.</p>
+<ul>
+<li><a href="https://hxwd.org/" target="_blank" rel="noopener noreferrer">Thesaurus Linguae Sericae (Christoph Harbsmeier et al. / Heidelberg University &amp; Kyoto University)</a> - An analytical dictionary and conceptual encyclopedia of classical Chinese, categorizing synonym hierarchies, syntactic functions, and rhetorical structures across early texts.</li>
+<li><a href="http://www.buddhism-dict.net/" target="_blank" rel="noopener noreferrer">Digital Dictionary of Buddhism &amp; CJKV-E Dictionary (Charles Muller / University of Tokyo)</a> - An authoritative, peer-reviewed lexicon of East Asian Buddhist technical terms, persons, and texts, accessible via free guest login.</li>
+<li><a href="https://www.zdic.net/" target="_blank" rel="noopener noreferrer">ZDic (Handian)</a> - A comprehensive digital Chinese dictionary integrating classical definitions from the Shuowen Jiezi, Kangxi Zidian, and modern character etymologies.</li>
+<li><a href="https://hanziyuan.net/" target="_blank" rel="noopener noreferrer">Chinese Etymology (Richard Sears)</a> - A searchable paleographical archive displaying the historical evolution of individual characters from oracle bone and bronze script to seal script and modern standard forms.</li>
+</ul>
+<h2 id="biographical-historical-and-prosopographical-databases">Biographical, Historical, and Prosopographical Databases</h2>
+<p>Databases that document historical context, bureaucratic careers, kinship structures, and intellectual lineages of Chinese thinkers.</p>
+<ul>
+<li><a href="https://projects.iq.harvard.edu/cbdb" target="_blank" rel="noopener noreferrer">China Biographical Database Project (Harvard University, Academia Sinica &amp; Peking University)</a> - A freely accessible relational database tracking biographical data, teacher-student relationships, and social networks for over 500,000 historical Chinese figures.</li>
+<li><a href="https://chgis.fas.harvard.edu/" target="_blank" rel="noopener noreferrer">China Historical GIS (Harvard University &amp; Fudan University)</a> - A digital historical atlas providing spatial and temporal datasets to locate historical settlements, administrative units, and regional academies across imperial dynasties.</li>
+</ul>
+<h2 id="academic-societies-scholarly-portals-and-bibliographic-registries">Academic Societies, Scholarly Portals, and Bibliographic Registries</h2>
+<p>Scholarly clearinghouses, academic associations, and subject-specific bibliographies that track research developments, conferences, and literature in Chinese and comparative philosophy.</p>
+<ul>
+<li><a href="https://warpweftandway.com/" target="_blank" rel="noopener noreferrer">Warp, Weft, and Way (Stephen Angle &amp; Manyul Im, eds.)</a> - An active group blog and academic clearinghouse devoted to Chinese and comparative philosophy, hosting substantive debates, book announcements, and podcast episodes.</li>
+<li><a href="https://philpapers.org/browse/chinese-philosophy" target="_blank" rel="noopener noreferrer">PhilPapers: Chinese Philosophy (JeeLoo Liu, ed.)</a> - A comprehensive bibliographic database indexing tens of thousands of contemporary academic books, journal articles, and preprints across all subfields of Chinese thought.</li>
+<li><a href="https://iscp-online1.org/" target="_blank" rel="noopener noreferrer">International Society for Chinese Philosophy (ISCP)</a> - The premier international academic society dedicated to Chinese philosophy, hosting biennial conferences and supporting cross-cultural philosophical exchange.</li>
+<li><a href="https://www.sacpweb.org/" target="_blank" rel="noopener noreferrer">Society for Asian and Comparative Philosophy (SACP)</a> - A scholarly organization promoting comparative work between Asian and Western traditions, hosting annual panels and monograph series.</li>
+<li><a href="https://www.goldenelixir.com/" target="_blank" rel="noopener noreferrer">The Golden Elixir: Taoism and Taoist Alchemy (Fabrizio Pregadio)</a> - A specialized academic reference portal providing bibliographies, glossaries, textual introductions, and canonical indices for Daoist philosophy and internal alchemy (<em>neidan</em>).</li>
+</ul>
+    </article>
+  </main>
+
+</body>
+</html>
