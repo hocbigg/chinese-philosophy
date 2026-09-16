@@ -5,9 +5,28 @@ description: Path to a free self-taught education in Chinese Philosophy!
 
 ## Introduction
 
-The Chinese Philosophy curriculum is a complete education in Chinese Philosophy using online materials.
+Chinese philosophy is a three-thousand-year intellectual tradition centered on practical ethics, moral psychology, social cohesion, and the relational nature of selfhood. While Western philosophy frequently begins with abstract epistemology or ontological skepticism, classical Chinese thought typically takes as its guiding question the realization of the *Dao* (the Way)—asking not merely "what is truth," but "where is the path to personal, communal, and cosmic harmony?" 
 
-## Communities
+This curriculum is designed for self-directed learners starting from absolute scratch. No background in philosophy, Chinese history, or the Chinese language is required. Texts are approached through authoritative, philosophically sensitive English translations, paired with reputable public-domain translations and recorded university lectures.
+
+### Curricular Sequencing
+
+Because Chinese philosophical traditions developed in continuous, direct debate with one another, studying them in historical and conceptual sequence is essential. Reading later thinkers without understanding whom they were arguing against obscures their primary motivations. The curriculum proceeds through four sequential phases:
+
+- **Methodological Orientation:** Establishing foundational historical context, hermeneutic tools, and comparative frameworks to avoid reading Western assumptions into classical Chinese categories.
+- **The Warring States Debate (Hundred Schools of Thought):** The classical crucible of Chinese thought. Kongzi (Confucius) articulates virtue ethics grounded in ritual (*li*) and benevolence (*ren*); Mozi challenges this with impartial consequentialism and state utilitarianism; Mengzi defends Confucianism by arguing for the innate goodness of human nature; Laozi and Zhuangzi subvert conventional moral norms through radical naturalness (*ziran*) and linguistic perspectivism; Xunzi counters Mengzi and the Daoists by arguing that human nature requires rigorous cultural reshaping; and Legalist statecraft synthesizes these debates into institutional realism.
+- **Imperial Synthesis and Buddhist Sinification:** The Han dynasty unifies classical debates into a shared correlative cosmology structured by Qi, Yin-Yang, the Five Phases, and the *Yijing*. Centuries later, Indian Buddhist metaphysics arrives in China, gradually transforming through indigenous philosophical concepts into the mature, holistic systems of Tiantai, Huayan, and Chan.
+- **The Song-Ming Neo-Confucian Revival:** Thinkers such as Zhu Xi and Wang Yangming reassert Confucian moral action, reinterpreting classical texts with sophisticated metaphysics (the School of Principle and School of Heart-Mind) specifically designed to respond to Buddhist and Daoist challenges.
+
+### Beyond the Core
+
+This curriculum covers the common foundational canon that every student in the discipline needs. Once you have worked through these core subjects, you can branch into the accompanying pages in this series to deepen and apply your knowledge:
+
+- [Advanced Topics](advanced_topics.md) explores specialized subfields, including Wei-Jin Xuanxue ontology, Yogācāra Buddhist phenomenology, Later Mohist logic, Confucian role ethics, and contemporary political meritocracy.
+- [Readings](extra/readings.md) curates advanced monographs, thematic anthologies, and specialized academic literature.
+- [Courses](extra/courses.md) gathers extended recorded seminar series and multimedia lectures for continued study.
+
+### Communities
 
 - [r/ChinesePhilosophy](https://www.reddit.com/r/ChinesePhilosophy/)
 - You can also interact through [GitHub issues](github.com/hocbigg/chinese-philosophy/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
