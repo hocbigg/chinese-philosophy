@@ -18,6 +18,8 @@
 
   <style>
 :root {
+  color-scheme: light dark;
+
   --bg: #ffffff;
   --fg: #1a1a1a;
   --muted: #595959;
@@ -47,12 +49,14 @@
 
 body {
   margin: 1.5rem auto;
-  max-width: min(60rem, 92vw);
-  padding: 0 0.75rem 3.5rem;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
   background-color: var(--bg);
   color: var(--fg);
   font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  word-wrap: break-word;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
 }
 
 .site-header {
@@ -93,7 +97,7 @@ nav .nav-brand {
 
 .skip-link {
   position: absolute;
-  top: -9999px;
+  transform: translateY(-150%);
   left: 1rem;
   background: var(--fg);
   color: var(--bg);
@@ -102,9 +106,11 @@ nav .nav-brand {
   text-decoration: none;
   font-weight: 600;
   border-radius: 4px;
+  transition: transform 0.2s ease;
 }
+
 .skip-link:focus {
-  top: 1rem;
+  transform: translateY(1rem);
 }
 
 .sr-only {
@@ -114,7 +120,7 @@ nav .nav-brand {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
   white-space: nowrap;
   border: 0;
 }
@@ -126,13 +132,41 @@ nav .nav-brand {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
-  margin-top: 1.75em;
-  margin-bottom: 0.5em;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   color: var(--fg);
+  font-weight: 600;
 }
-h1 { font-size: 1.85rem; margin-top: 0.5em; }
-h2 { font-size: 1.45rem; }
-h3 { font-size: 1.2rem; }
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 
 p, ul, ol, blockquote, table {
   margin-top: 0;
@@ -159,13 +193,21 @@ a:hover {
   text-decoration-thickness: 2px;
 }
 
+a:has(img) {
+  text-decoration: none;
+}
+
 .page-header {
   text-align: center;
   margin-bottom: 2rem;
 }
-.page-header img {
+
+img {
   max-width: 100%;
   height: auto;
+}
+
+.page-header img {
   margin: 0 auto 1rem;
   display: block;
 }
@@ -178,6 +220,7 @@ code {
   border-radius: 4px;
   border: 1px solid var(--border);
 }
+
 pre {
   background-color: var(--code-bg);
   border: 1px solid var(--border);
@@ -186,33 +229,39 @@ pre {
   overflow-x: auto;
   tab-size: 2;
 }
+
 pre code {
   background: transparent;
   padding: 0;
   border: none;
   font-size: 0.9rem;
+  border-radius: 0;
 }
 
 .table-wrapper {
   overflow-x: auto;
   margin-bottom: 1.5rem;
 }
+
 table {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
 }
+
 th, td {
   border: 1px solid var(--border);
   padding: 0.6rem 0.75rem;
   vertical-align: top;
 }
+
 th {
   background-color: var(--th-bg);
   font-weight: 600;
 }
 
 blockquote {
+  margin-inline: 0;
   border-left: 4px solid var(--border);
   padding-left: 1rem;
   color: var(--muted);
@@ -221,11 +270,12 @@ blockquote {
 
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+    animation: none !important;
+    transition: none !important;
     scroll-behavior: auto !important;
   }
 }
+
 @media print {
   body {
     max-width: none;
@@ -251,7 +301,7 @@ blockquote {
       <li><a href="/chinese-philosophy/extras/readings.html">Extra Readings</a></li>
       <li><a href="/chinese-philosophy/extras/courses.html">Extra Courses</a></li>
       <li><a href="/chinese-philosophy/resources.html">Resources</a></li>
-      <li><a href="https://github.com/hocbigg/" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+      <li><a href="https://github.com/hocbigg/chinese-philosophy" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
     </ul>
     </nav>
   </header>
@@ -259,88 +309,101 @@ blockquote {
   <main id="main-content">
     <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="Hocbigg logo" width="120" height="120">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Chinese Philosophy</h1>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-09-16">2026-09-16</time></small></p>
 </header>
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Chinese philosophy is a three-thousand-year intellectual tradition centered on practical ethics, moral psychology, social cohesion, and the relational nature of selfhood. While Western philosophy frequently begins with abstract epistemology or ontological skepticism, classical Chinese thought typically takes as its guiding question the realization of the <em>Dao</em> (the Way)—asking not merely "what is truth," but "where is the path to personal, communal, and cosmic harmony?" </p>
+<p>This curriculum is designed for self-directed learners starting from absolute scratch. No background in philosophy, Chinese history, or the Chinese language is required. Texts are approached through authoritative, philosophically sensitive English translations, paired with reputable public-domain translations and recorded university lectures.</p>
+<h3 id="curricular-sequencing">Curricular Sequencing</h3>
+<p>Because Chinese philosophical traditions developed in continuous, direct debate with one another, studying them in historical and conceptual sequence is essential. Reading later thinkers without understanding whom they were arguing against obscures their primary motivations. The curriculum proceeds through four sequential phases:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Methodological Orientation:</strong> Establishing foundational historical context, hermeneutic tools, and comparative frameworks to avoid reading Western assumptions into classical Chinese categories.</li>
+<li><strong>The Warring States Debate (Hundred Schools of Thought):</strong> The classical crucible of Chinese thought. Kongzi (Confucius) articulates virtue ethics grounded in ritual (<em>li</em>) and benevolence (<em>ren</em>); Mozi challenges this with impartial consequentialism and state utilitarianism; Mengzi defends Confucianism by arguing for the innate goodness of human nature; Laozi and Zhuangzi subvert conventional moral norms through radical naturalness (<em>ziran</em>) and linguistic perspectivism; Xunzi counters Mengzi and the Daoists by arguing that human nature requires rigorous cultural reshaping; and Legalist statecraft synthesizes these debates into institutional realism.</li>
+<li><strong>Imperial Synthesis and Buddhist Sinification:</strong> The Han dynasty unifies classical debates into a shared correlative cosmology structured by Qi, Yin-Yang, the Five Phases, and the <em>Yijing</em>. Centuries later, Indian Buddhist metaphysics arrives in China, gradually transforming through indigenous philosophical concepts into the mature, holistic systems of Tiantai, Huayan, and Chan.</li>
+<li><strong>The Song-Ming Neo-Confucian Revival:</strong> Thinkers such as Zhu Xi and Wang Yangming reassert Confucian moral action, reinterpreting classical texts with sophisticated metaphysics (the School of Principle and School of Heart-Mind) specifically designed to respond to Buddhist and Daoist challenges.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Chinese Philosophy curriculum is a complete education in Chinese Philosophy using online materials.</p>
-<h1 id="communities">Communities</h1>
+<h3 id="beyond-the-core">Beyond the Core</h3>
+<p>This curriculum covers the common foundational canon that every student in the discipline needs. Once you have worked through these core subjects, you can branch into the accompanying pages in this series to deepen and apply your knowledge:</p>
+<ul>
+<li><a href="advanced_topics.html">Advanced Topics</a> explores specialized subfields, including Wei-Jin Xuanxue ontology, Yogācāra Buddhist phenomenology, Later Mohist logic, Confucian role ethics, and contemporary political meritocracy.</li>
+<li><a href="extra/readings.html">Readings</a> curates advanced monographs, thematic anthologies, and specialized academic literature.</li>
+<li><a href="extra/courses.html">Courses</a> gathers extended recorded seminar series and multimedia lectures for continued study.</li>
+</ul>
+<h3 id="communities">Communities</h3>
 <ul>
 <li><a href="https://www.reddit.com/r/ChinesePhilosophy/" target="_blank" rel="noopener noreferrer">r/ChinesePhilosophy</a></li>
 <li>You can also interact through <a href="github.com/hocbigg/chinese-philosophy/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<h2 id="introduction-to-chinese-philosophy">Introduction to Chinese Philosophy</h2>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="introduction-to-chinese-philosophy">Introduction to Chinese Philosophy</h3>
 <p>This subject introduces the central concerns, conceptual frameworks, and comparative methodologies of Chinese philosophical traditions from antiquity to the imperial era.</p>
-<p><a href="https://books.google.com/books?isbn=9781107504097" target="_blank" rel="noopener noreferrer">An Introduction to Chinese Philosophy (Cambridge University Press / Karyn Lai)</a> - A systematic introductory textbook examining key debates in ethics, metaphysics, and epistemology across Chinese intellectual history.</p>
-<p><a href="https://books.google.com/books?isbn=9781603844680" target="_blank" rel="noopener noreferrer">Introduction to Classical Chinese Philosophy (Hackett Publishing / Bryan W. Van Norden)</a> - An accessible primer establishing historical context and core philosophical arguments of the Warring States period.</p>
-<p><a href="https://pll.harvard.edu/course/path-happiness-what-chinese-philosophy-teaches-us-about-good-life" target="_blank" rel="noopener noreferrer">The Path to Happiness: What Chinese Philosophy Teaches Us about the Good Life (Harvard University / edX)</a> - Free audit course examining how early Chinese thinkers approached ethics, ritual, and self-cultivation.</p>
-<p><a href="https://www.youtube.com/playlist?list=PLFZtry6b0WR7o6UF9_7jZwW_YtptlDm8P" target="_blank" rel="noopener noreferrer">Chinese Philosophy Lecture Series (Bryan Van Norden / YouTube)</a> - A comprehensive university video lecture playlist spanning classical thought, Chinese Buddhism, and Neo-Confucianism.</p>
-<p><a href="https://historyofphilosophy.net" target="_blank" rel="noopener noreferrer">History of Philosophy: Classical China Series (History of Philosophy Without Any Gaps / Peter Adamson &amp; Karyn Lai)</a> - Chronological audio series exploring early Chinese thinkers in their historical context.</p>
-<p><a href="https://plato.stanford.edu/entries/comparphil-chiwes/" target="_blank" rel="noopener noreferrer">Comparative Philosophy: Chinese and Western (Stanford Encyclopedia of Philosophy)</a> - Analyzes methodological issues, translation challenges, and conceptual divergences between Chinese and Western thought.</p>
-<h2 id="classical-confucianism-kongzi-mengzi-and-xunzi">Classical Confucianism: Kongzi, Mengzi, and Xunzi</h2>
+<p><a href="https://books.google.com/books?isbn=9781107504097" target="_blank" rel="noopener noreferrer">An Introduction to Chinese Philosophy (Cambridge University Press / Karyn Lai)</a> - A systematic introductory textbook examining key debates in ethics, metaphysics, and epistemology across Chinese intellectual history; serves as an alternative to Van Norden below for learners wanting a broader chronological span including Buddhism.</p>
+<p><a href="https://books.google.com/books?isbn=9781603844680" target="_blank" rel="noopener noreferrer">Introduction to Classical Chinese Philosophy (Hackett Publishing / Bryan W. Van Norden)</a> - An alternative starting textbook to Lai above, narrower in historical scope but focused tightly on the argumentative disputes among the Warring States thinkers.</p>
+<p><a href="https://pll.harvard.edu/course/path-happiness-what-chinese-philosophy-teaches-us-about-good-life" target="_blank" rel="noopener noreferrer">The Path to Happiness: What Chinese Philosophy Teaches Us about the Good Life (Harvard University / edX)</a> - A thematic, applied video course alternative focusing on how early Chinese thinkers approached ethics, ritual, and self-cultivation in daily life.</p>
+<p><a href="https://www.youtube.com/playlist?list=PLFZtry6b0WR7o6UF9_7jZwW_YtptlDm8P" target="_blank" rel="noopener noreferrer">Chinese Philosophy Lecture Series (Bryan Van Norden / YouTube)</a> - Pairs directly with Van Norden's textbook above as a complete, free university lecture series covering classical through late imperial thought.</p>
+<p><a href="https://historyofphilosophy.net" target="_blank" rel="noopener noreferrer">History of Philosophy: Classical China Series (History of Philosophy Without Any Gaps / Peter Adamson &amp; Karyn Lai)</a> - An accessible audio companion to the textbooks, discussing the thinkers in chronological order with guest specialist interviews.</p>
+<p><a href="https://plato.stanford.edu/entries/comparphil-chiwes/" target="_blank" rel="noopener noreferrer">Comparative Philosophy: Chinese and Western (Stanford Encyclopedia of Philosophy)</a> - A conceptual bridge to consult alongside the introductory texts to understand how classical Chinese categories contrast with Western philosophical frameworks.</p>
+<h3 id="classical-confucianism-kongzi-mengzi-and-xunzi">Classical Confucianism: Kongzi, Mengzi, and Xunzi</h3>
 <p>This subject covers the foundational period of Confucian thought, focusing on moral self-cultivation, ritual propriety, virtue ethics, and debates over human nature.</p>
-<p><a href="https://books.google.com/books?isbn=9780872207806" target="_blank" rel="noopener noreferrer">Readings in Classical Chinese Philosophy (Hackett Publishing / Philip J. Ivanhoe &amp; Bryan W. Van Norden, eds.)</a> - The standard primary source anthology containing reliable translations of Confucius, Mencius, and Xunzi alongside rival Warring States schools.</p>
-<p><a href="https://books.google.com/books?isbn=9780872206359" target="_blank" rel="noopener noreferrer">Confucius: Analects with Selections from Traditional Commentaries (Hackett Publishing / Edward Slingerland, trans.)</a> - A translation that embeds traditional Chinese commentaries directly alongside the aphorisms for essential hermeneutic context.</p>
-<p><a href="https://books.google.com/books?isbn=9780872209138" target="_blank" rel="noopener noreferrer">Mengzi: With Selections from Traditional Commentaries (Hackett Publishing / Bryan W. Van Norden, trans.)</a> - Translation highlighting Mencius's moral psychology, virtue theory, and argument for the inherent goodness of human nature.</p>
-<p><a href="https://books.google.com/books?isbn=9780691169118" target="_blank" rel="noopener noreferrer">Xunzi: The Complete Text (Princeton University Press / Eric L. Hutton, trans.)</a> - The definitive complete translation of Xunzi's naturalist philosophy, ritual theory, and argument that human nature requires deliberate reformation.</p>
-<p><a href="https://plato.stanford.edu/entries/confucius/" target="_blank" rel="noopener noreferrer">Confucius (Stanford Encyclopedia of Philosophy)</a></p>
-<p><a href="https://plato.stanford.edu/entries/mencius/" target="_blank" rel="noopener noreferrer">Mencius (Stanford Encyclopedia of Philosophy)</a></p>
-<p><a href="https://plato.stanford.edu/entries/xunzi/" target="_blank" rel="noopener noreferrer">Xunzi (Stanford Encyclopedia of Philosophy)</a></p>
-<h2 id="classical-daoism-laozi-and-zhuangzi">Classical Daoism: Laozi and Zhuangzi</h2>
+<p><a href="https://books.google.com/books?isbn=9780872207806" target="_blank" rel="noopener noreferrer">Readings in Classical Chinese Philosophy (Hackett Publishing / Philip J. Ivanhoe &amp; Bryan W. Van Norden, eds.)</a> - The core primary source anthology for this module, providing reliable translations of Confucius, Mencius, and Xunzi alongside rival Warring States schools.</p>
+<p><a href="https://books.google.com/books?isbn=9780872206359" target="_blank" rel="noopener noreferrer">Confucius: Analects with Selections from Traditional Commentaries (Hackett Publishing / Edward Slingerland, trans.)</a> - A deeper standalone alternative to the anthology selections above, embedding traditional commentaries directly alongside the aphorisms for hermeneutic context.</p>
+<p><a href="https://www.gutenberg.org/ebooks/4094" target="_blank" rel="noopener noreferrer">The Chinese Classics: Volume 1 — Confucian Analects (Project Gutenberg / James Legge, trans.)</a> - A freely accessible public domain alternative to Slingerland above, providing Legge's classic translation of the complete text.</p>
+<p><a href="https://books.google.com/books?isbn=9780872209138" target="_blank" rel="noopener noreferrer">Mengzi: With Selections from Traditional Commentaries (Hackett Publishing / Bryan W. Van Norden, trans.)</a> - Builds on the foundational anthology by providing an unabridged translation of Mencius with traditional commentary highlighting moral psychology and virtue theory.</p>
+<p><a href="https://books.google.com/books?isbn=9780691169118" target="_blank" rel="noopener noreferrer">Xunzi: The Complete Text (Princeton University Press / Eric L. Hutton, trans.)</a> - Builds on the foundational anthology by providing the complete text of Xunzi's naturalist philosophy, ritual theory, and argument that human nature requires deliberate reformation.</p>
+<p><a href="https://plato.stanford.edu/entries/confucius/" target="_blank" rel="noopener noreferrer">Confucius (Stanford Encyclopedia of Philosophy)</a> - Conceptual study summary to read alongside the Analects.</p>
+<p><a href="https://plato.stanford.edu/entries/mencius/" target="_blank" rel="noopener noreferrer">Mencius (Stanford Encyclopedia of Philosophy)</a> - Conceptual study summary analyzing Mencius's moral psychology and political theory.</p>
+<p><a href="https://plato.stanford.edu/entries/xunzi/" target="_blank" rel="noopener noreferrer">Xunzi (Stanford Encyclopedia of Philosophy)</a> - Conceptual study summary analyzing Xunzi's epistemology, ritual constructivism, and moral reformism.</p>
+<h3 id="classical-daoism-laozi-and-zhuangzi">Classical Daoism: Laozi and Zhuangzi</h3>
 <p>This subject examines early Daoist philosophy, emphasizing natural spontaneity, non-action (wuwei), skepticism toward conventional values, and linguistic perspectivism.</p>
-<p><a href="https://books.google.com/books?isbn=9780872205499" target="_blank" rel="noopener noreferrer">Daodejing (Hackett Publishing / Philip J. Ivanhoe, trans.)</a> - A philosophical translation providing clear explanations for foundational concepts such as Dao, De, and wuwei.</p>
-<p><a href="https://books.google.com/books?isbn=9781624668555" target="_blank" rel="noopener noreferrer">Zhuangzi: The Complete Writings (Hackett Publishing / Brook Ziporyn, trans.)</a> - An annotated translation capturing the humor, therapeutic paradoxes, and perspectivist epistemology of the Zhuangzi.</p>
-<p><a href="https://www.youtube.com/watch?v=UNju5zGfdjI" target="_blank" rel="noopener noreferrer">The Greatest Daoist Philosopher: Zhuangzi (Bryan Van Norden / YouTube)</a> - University lecture on Zhuangzi's relativism, skepticism, and critique of conventional moral norms.</p>
-<p><a href="https://plato.stanford.edu/entries/laozi/" target="_blank" rel="noopener noreferrer">Laozi (Stanford Encyclopedia of Philosophy)</a></p>
-<p><a href="https://plato.stanford.edu/entries/zhuangzi/" target="_blank" rel="noopener noreferrer">Zhuangzi (Stanford Encyclopedia of Philosophy)</a></p>
-<p><a href="https://plato.stanford.edu/entries/daoism/" target="_blank" rel="noopener noreferrer">Daoism (Stanford Encyclopedia of Philosophy)</a> - Comprehensive overview surveying philosophical Daoist ontology, naturalism, and normative skepticism.</p>
-<h2 id="mohism-and-the-school-of-names-ethics-logic-and-epistemology">Mohism and the School of Names: Ethics, Logic, and Epistemology</h2>
+<p><a href="https://books.google.com/books?isbn=9780872205499" target="_blank" rel="noopener noreferrer">Daodejing (Hackett Publishing / Philip J. Ivanhoe, trans.)</a> - A lucid modern translation providing philosophical commentary on foundational concepts such as Dao, De, and wuwei.</p>
+<p><a href="https://www.gutenberg.org/ebooks/23974" target="_blank" rel="noopener noreferrer">The Tao Teh King, or the Tao and Its Characteristics (Project Gutenberg / James Legge, trans.)</a> - A free, legitimate public domain translation to use as an alternative to Ivanhoe above.</p>
+<p><a href="https://books.google.com/books?isbn=9781624668555" target="_blank" rel="noopener noreferrer">Zhuangzi: The Complete Writings (Hackett Publishing / Brook Ziporyn, trans.)</a> - The core primary text for Zhuangzi, capturing the humor, therapeutic paradoxes, and perspectivist epistemology of the complete inner and outer chapters.</p>
+<p><a href="https://www.youtube.com/watch?v=UNju5zGfdjI" target="_blank" rel="noopener noreferrer">The Greatest Daoist Philosopher: Zhuangzi (Bryan Van Norden / YouTube)</a> - A recorded university lecture serving as an audio-visual companion to Ziporyn's text, exploring Zhuangzi's relativism, skepticism, and critique of conventional norms.</p>
+<p><a href="https://plato.stanford.edu/entries/laozi/" target="_blank" rel="noopener noreferrer">Laozi (Stanford Encyclopedia of Philosophy)</a> - A critical reference entry examining the historical compilation and central philosophical themes of the Daodejing.</p>
+<p><a href="https://plato.stanford.edu/entries/zhuangzi/" target="_blank" rel="noopener noreferrer">Zhuangzi (Stanford Encyclopedia of Philosophy)</a> - An analytical reference entry examining the linguistic skepticism, epistemology, and ethics of the Zhuangzi.</p>
+<p><a href="https://plato.stanford.edu/entries/daoism/" target="_blank" rel="noopener noreferrer">Daoism (Stanford Encyclopedia of Philosophy)</a> - A broad survey contextualizing early philosophical Daoism within its wider religious, political, and metaphysical dimensions.</p>
+<h3 id="mohism-and-the-school-of-names-ethics-logic-and-epistemology">Mohism and the School of Names: Ethics, Logic, and Epistemology</h3>
 <p>This subject investigates Mohist consequentialism, early theories of state authority, linguistic paradoxes, and classical Chinese debates on epistemology and valid disputation.</p>
-<p><a href="https://books.google.com/books?isbn=9780231130011" target="_blank" rel="noopener noreferrer">Mozi: Basic Writings (Columbia University Press / Burton Watson, trans.)</a> - An accessible core translation of the central Mohist doctrines, including impartial caring, opposition to aggressive warfare, and state consequentialism.</p>
-<p><a href="https://books.google.com/books?isbn=9780231152402" target="_blank" rel="noopener noreferrer">The Mozi: A Complete Translation (Columbia University Press / Ian Johnston, trans.)</a> - Complete bilingual edition covering Mohist ethics along with the technical dialectical and logical chapters of the Later Mohists.</p>
-<p><a href="https://plato.stanford.edu/entries/mohism/" target="_blank" rel="noopener noreferrer">Mohism (Stanford Encyclopedia of Philosophy)</a> - Detailed analysis of Mohist consequentialism, ethical criteria, and political philosophy.</p>
-<p><a href="https://plato.stanford.edu/entries/school-names/" target="_blank" rel="noopener noreferrer">School of Names (Stanford Encyclopedia of Philosophy)</a> - Explores the linguistic paradoxes and semantic inquiries of Hui Shi and Gongsun Long regarding names and reality.</p>
-<p><a href="https://plato.stanford.edu/entries/chinese-logic-language/" target="_blank" rel="noopener noreferrer">Logic and Language in Early Chinese Philosophy (Stanford Encyclopedia of Philosophy)</a> - Examines semantic theory, dialectical disputation, and analogical inference across the Warring States period.</p>
+<p><a href="https://books.google.com/books?isbn=9780231130011" target="_blank" rel="noopener noreferrer">Mozi: Basic Writings (Columbia University Press / Burton Watson, trans.)</a> - The recommended primary text for beginners, presenting an accessible, curated translation of central Mohist doctrines including impartial caring and state consequentialism.</p>
+<p><a href="https://books.google.com/books?isbn=9780231152402" target="_blank" rel="noopener noreferrer">The Mozi: A Complete Translation (Columbia University Press / Ian Johnston, trans.)</a> - A comprehensive alternative to Watson above, recommended for learners who wish to study the technical dialectical, optical, and logical chapters of the Later Mohists.</p>
+<p><a href="https://plato.stanford.edu/entries/mohism/" target="_blank" rel="noopener noreferrer">Mohism (Stanford Encyclopedia of Philosophy)</a> - Analytical companion to the primary texts, evaluating Mohist consequentialist ethics, political philosophy, and epistemic criteria.</p>
+<p><a href="https://plato.stanford.edu/entries/school-names/" target="_blank" rel="noopener noreferrer">School of Names (Stanford Encyclopedia of Philosophy)</a> - Explores the paradoxical disputations of Hui Shi and Gongsun Long regarding reference, attributes, and part-whole mereology.</p>
+<p><a href="https://plato.stanford.edu/entries/chinese-logic-language/" target="_blank" rel="noopener noreferrer">Logic and Language in Early Chinese Philosophy (Stanford Encyclopedia of Philosophy)</a> - Examines semantic theory, dialectical disputation (bian), and analogical inference across the Warring States period.</p>
 <p><a href="https://plato.stanford.edu/entries/chinese-epistemology/" target="_blank" rel="noopener noreferrer">Epistemology in Chinese Philosophy (Stanford Encyclopedia of Philosophy)</a> - Analyzes classical Chinese conceptions of knowing, perceptual authority, linguistic sorting, and action-guiding knowledge.</p>
-<h2 id="legalism-statecraft-power-and-institutional-realism">Legalism: Statecraft, Power, and Institutional Realism</h2>
+<h3 id="legalism-statecraft-power-and-institutional-realism">Legalism: Statecraft, Power, and Institutional Realism</h3>
 <p>This subject explores the Legalist (Fa-jia) political tradition, centering on administrative technique, institutional design, the rule of law, and amoral political realism.</p>
-<p><a href="https://books.google.com/books?isbn=9780231129695" target="_blank" rel="noopener noreferrer">Han Feizi: Basic Writings (Columbia University Press / Burton Watson, trans.)</a> - Core primary text detailing Han Feizi's synthesis of statecraft, institutional rewards and punishments, and sovereign power.</p>
-<p><a href="https://books.google.com/books?isbn=9780231180290" target="_blank" rel="noopener noreferrer">The Book of Lord Shang: Apologetics of State Power in Early China (Columbia University Press / Yuri Pines, trans.)</a> - Annotated translation of the foundational text that provided the militarist and administrative architecture for the Qin state.</p>
-<p><a href="https://plato.stanford.edu/entries/chinese-legalism/" target="_blank" rel="noopener noreferrer">Legalism in Chinese Philosophy (Stanford Encyclopedia of Philosophy)</a> - Surveys the institutional realism, administrative mechanics, and political philosophy of the Legalist thinkers.</p>
-<h2 id="han-dynasty-synthesis-cosmology-and-the-philosophy-of-change">Han Dynasty Synthesis, Cosmology, and the Philosophy of Change</h2>
+<p><a href="https://books.google.com/books?isbn=9780231129695" target="_blank" rel="noopener noreferrer">Han Feizi: Basic Writings (Columbia University Press / Burton Watson, trans.)</a> - The primary reader for this module, detailing Han Feizi's synthesis of statecraft, institutional incentives, and sovereign power.</p>
+<p><a href="https://archive.org/details/hanfeitzu0000unse" target="_blank" rel="noopener noreferrer">The Complete Works of Han Fei Tzu (Internet Archive / W. K. Liao, trans.)</a> - A freely accessible complete public domain translation on Internet Archive, serving as a comprehensive alternative to Watson's selected chapters above.</p>
+<p><a href="https://books.google.com/books?isbn=9780231180290" target="_blank" rel="noopener noreferrer">The Book of Lord Shang: Apologetics of State Power in Early China (Columbia University Press / Yuri Pines, trans.)</a> - A complementary primary source to the Han Feizi, providing an annotated translation of the foundational text of Qin institutional and military totalitarianism.</p>
+<p><a href="https://plato.stanford.edu/entries/chinese-legalism/" target="_blank" rel="noopener noreferrer">Legalism in Chinese Philosophy (Stanford Encyclopedia of Philosophy)</a> - Surveys the institutional realism, administrative mechanics, and political philosophy of Legalist thinkers to synthesize the primary texts.</p>
+<h3 id="han-dynasty-synthesis-cosmology-and-the-philosophy-of-change">Han Dynasty Synthesis, Cosmology, and the Philosophy of Change</h3>
 <p>This subject analyzes the imperial cosmological synthesis that integrated Yin-Yang, the Five Phases (Wuxing), Qi, and the divinatory metaphysics of the Yijing.</p>
-<p><a href="https://books.google.com/books?isbn=9781624661907" target="_blank" rel="noopener noreferrer">Readings in Later Chinese Philosophy: Han to the 20th Century (Hackett Publishing / Justin Tiwald &amp; Bryan W. Van Norden, eds.)</a> - Canonical anthology containing essential primary selections from the Huainanzi, Dong Zhongshu, and imperial correlative cosmologies.</p>
-<p><a href="https://books.google.com/books?isbn=9780521697811" target="_blank" rel="noopener noreferrer">Yinyang: The Way of Heaven and Earth in Chinese Thought and Culture (Cambridge University Press / Robin R. Wang)</a> - Conceptual history of Yin-Yang from early origins to its systematization into a universal explanatory scheme.</p>
-<p><a href="https://www.youtube.com/watch?v=tVI408V7r4E" target="_blank" rel="noopener noreferrer">Chinese Cosmology (Bryan Van Norden / YouTube)</a> - University lecture detailing the systemic interaction of Dao, Yin-Yang, Qi (vital energy), and the Five Phases.</p>
-<p><a href="https://www.youtube.com/watch?v=jNFy6RFU1xk" target="_blank" rel="noopener noreferrer">Understanding the Classic of Changes (I Ching) (Bryan Van Norden / YouTube)</a> - Accessible lecture on the structural mechanics, historical evolution, and process metaphysics of the Yijing.</p>
-<p><a href="https://plato.stanford.edu/entries/chinese-change/" target="_blank" rel="noopener noreferrer">Chinese Philosophy of Change (Yijing) (Stanford Encyclopedia of Philosophy)</a> - Examines hexagram symbolism, the Ten Wings commentaries, and the organismic metaphysics of dynamic change.</p>
-<p><a href="https://plato.stanford.edu/entries/han-dynasty/" target="_blank" rel="noopener noreferrer">Philosophy in Han Dynasty China (Stanford Encyclopedia of Philosophy)</a> - Traces the development of imperial syncretism, correlative cosmology, and critical rationalism during the Han era.</p>
-<p><a href="https://plato.stanford.edu/entries/chinese-metaphysics/" target="_blank" rel="noopener noreferrer">Metaphysics in Chinese Philosophy (Stanford Encyclopedia of Philosophy)</a> - Systematic reference entry examining Qi, polarity, generation, and immanent order in Chinese ontology.</p>
-<h2 id="chinese-buddhist-philosophy-tiantai-huayan-and-chan">Chinese Buddhist Philosophy: Tiantai, Huayan, and Chan</h2>
+<p><a href="https://books.google.com/books?isbn=9781624661907" target="_blank" rel="noopener noreferrer">Readings in Later Chinese Philosophy: Han to the 20th Century (Hackett Publishing / Justin Tiwald &amp; Bryan W. Van Norden, eds.)</a> - The primary text sourcebook for this module, containing essential selections from the Huainanzi, Dong Zhongshu, and imperial correlative cosmologies.</p>
+<p><a href="https://books.google.com/books?isbn=9780521697811" target="_blank" rel="noopener noreferrer">Yinyang: The Way of Heaven and Earth in Chinese Thought and Culture (Cambridge University Press / Robin R. Wang)</a> - A conceptual study to read alongside the primary texts, tracing the evolution of Yin-Yang into an all-encompassing explanatory matrix.</p>
+<p><a href="https://www.youtube.com/watch?v=tVI408V7r4E" target="_blank" rel="noopener noreferrer">Chinese Cosmology (Bryan Van Norden / YouTube)</a> - An introductory video lecture explaining the systemic interaction of Dao, Yin-Yang, Qi, and the Five Phases.</p>
+<p><a href="https://www.youtube.com/watch?v=jNFy6RFU1xk" target="_blank" rel="noopener noreferrer">Understanding the Classic of Changes (I Ching) (Bryan Van Norden / YouTube)</a> - An accessible recorded lecture on the structure, divination mechanics, and process metaphysics of the Yijing.</p>
+<p><a href="https://plato.stanford.edu/entries/chinese-change/" target="_blank" rel="noopener noreferrer">Chinese Philosophy of Change (Yijing) (Stanford Encyclopedia of Philosophy)</a> - Conceptual reference examining hexagram symbolism, the Ten Wings commentaries, and the organismic metaphysics of dynamic transformation.</p>
+<p><a href="https://plato.stanford.edu/entries/han-dynasty/" target="_blank" rel="noopener noreferrer">Philosophy in Han Dynasty China (Stanford Encyclopedia of Philosophy)</a> - Traces the development of imperial syncretism, political cosmology, and critical rationalism during the Han era.</p>
+<p><a href="https://plato.stanford.edu/entries/chinese-metaphysics/" target="_blank" rel="noopener noreferrer">Metaphysics in Chinese Philosophy (Stanford Encyclopedia of Philosophy)</a> - A reference entry synthesizing Qi, polarity, generation, and immanent order across classical and Han ontology.</p>
+<h3 id="chinese-buddhist-philosophy-tiantai-huayan-and-chan">Chinese Buddhist Philosophy: Tiantai, Huayan, and Chan</h3>
 <p>This subject investigates the sinification of Buddhist metaphysics and epistemology, focusing on emptiness, interpenetration, Buddha-nature, and sudden awakening.</p>
-<p><a href="https://books.google.com/books?isbn=9780691019642" target="_blank" rel="noopener noreferrer">A Source Book in Chinese Philosophy (Princeton University Press / Wing-tsit Chan, ed.)</a> - Seminal anthology featuring translated foundational texts and commentary on Tiantai, Huayan, and Chan Buddhist thought.</p>
-<p><a href="https://www.youtube.com/watch?v=wRlaVnmw1i0" target="_blank" rel="noopener noreferrer">Basics of Buddhist Philosophy (Bryan Van Norden / YouTube)</a> - Lecture exploring core Buddhist metaphysics, no-self, dependent origination, and ethical implications.</p>
-<p><a href="https://www.youtube.com/watch?v=Q1xv3HmUddY" target="_blank" rel="noopener noreferrer">Buddhism Comes to China (Bryan Van Norden / YouTube)</a> - Explores the intellectual transformation of Buddhism in China, including debates over monastic authority and harmonization with indigenous schools.</p>
-<p><a href="https://plato.stanford.edu/entries/buddhism-huayan/" target="_blank" rel="noopener noreferrer">Huayan Buddhism (Stanford Encyclopedia of Philosophy)</a> - Explains Fazang's metaphysics, Indra's net, and the mutual non-obstruction of principle (li) and phenomena (shi).</p>
-<p><a href="https://plato.stanford.edu/entries/buddhism-chan/" target="_blank" rel="noopener noreferrer">Chan Buddhism (Stanford Encyclopedia of Philosophy)</a> - Surveys the epistemology of sudden awakening, language skepticism, and meditative practice in the Chan tradition.</p>
-<p><a href="https://plato.stanford.edu/entries/buddhism-tiantai/" target="_blank" rel="noopener noreferrer">Tiantai Buddhism (Stanford Encyclopedia of Philosophy)</a> - Detailed treatment of Zhiyi's Threefold Truth doctrine and the holistic ontology of mutual inclusion.</p>
-<h2 id="neo-confucianism-song-ming-metaphysics-and-moral-psychology">Neo-Confucianism: Song-Ming Metaphysics and Moral Psychology</h2>
+<p><a href="https://books.google.com/books?isbn=9780691019642" target="_blank" rel="noopener noreferrer">A Source Book in Chinese Philosophy (Princeton University Press / Wing-tsit Chan, ed.)</a> - The foundational primary source anthology for this module, providing translated selections and commentary on Tiantai, Huayan, and Chan Buddhist masters.</p>
+<p><a href="https://www.youtube.com/watch?v=wRlaVnmw1i0" target="_blank" rel="noopener noreferrer">Basics of Buddhist Philosophy (Bryan Van Norden / YouTube)</a> - The foundational video lecture for this module, exploring core Indian Buddhist concepts including no-self, the four noble truths, and dependent origination.</p>
+<p><a href="https://www.youtube.com/watch?v=Q1xv3HmUddY" target="_blank" rel="noopener noreferrer">Buddhism Comes to China (Bryan Van Norden / YouTube)</a> - Sequential follow-up to the lecture above, exploring how Indian Buddhist doctrines adapted to and transformed Chinese culture, ethics, and metaphysics.</p>
+<p><a href="https://plato.stanford.edu/entries/buddhism-huayan/" target="_blank" rel="noopener noreferrer">Huayan Buddhism (Stanford Encyclopedia of Philosophy)</a> - Analytical reference explaining Fazang's metaphysics, Indra's net, and the mutual non-obstruction of principle (li) and phenomena (shi).</p>
+<p><a href="https://plato.stanford.edu/entries/buddhism-chan/" target="_blank" rel="noopener noreferrer">Chan Buddhism (Stanford Encyclopedia of Philosophy)</a> - Analytical reference surveying the epistemology of sudden awakening, language skepticism, and meditative practice in the Chan lineage.</p>
+<p><a href="https://plato.stanford.edu/entries/buddhism-tiantai/" target="_blank" rel="noopener noreferrer">Tiantai Buddhism (Stanford Encyclopedia of Philosophy)</a> - Analytical reference detailing Zhiyi's Threefold Truth doctrine and the holistic ontology of mutual inclusion.</p>
+<h3 id="neo-confucianism-song-ming-metaphysics-and-moral-psychology">Neo-Confucianism: Song-Ming Metaphysics and Moral Psychology</h3>
 <p>This subject examines the intellectual revival of Confucianism in the Song and Ming dynasties, centering on debates over principle (li), material force (qi), mind (xin), and self-cultivation.</p>
-<p><a href="https://books.google.com/books?isbn=9780745662497" target="_blank" rel="noopener noreferrer">Neo-Confucian Philosophy: Technologies of Self-Cultivation (Polity Press / Stephen C. Angle &amp; Justin Tiwald)</a> - Clear, structured guide systematically breaking down Neo-Confucian metaphysics, moral psychology, and self-cultivation practices.</p>
-<p><a href="https://books.google.com/books?isbn=9781624661907" target="_blank" rel="noopener noreferrer">Readings in Later Chinese Philosophy: Han to the 20th Century (Hackett Publishing / Justin Tiwald &amp; Bryan W. Van Norden, eds.)</a> - Provides primary translations of foundational thinkers including Zhou Dunyi, Zhang Zai, the Cheng brothers, Zhu Xi, and Wang Yangming.</p>
-<p><a href="https://www.youtube.com/watch?v=3gGPvnYvRU0" target="_blank" rel="noopener noreferrer">China's Favorite Confucian: Wang Yangming (Bryan Van Norden / YouTube)</a> - University lecture on Wang Yangming's critique of Zhu Xi, the unity of knowing and acting, and innate moral knowledge (liangzhi).</p>
-<p><a href="https://plato.stanford.edu/entries/song-ming-confucianism/" target="_blank" rel="noopener noreferrer">Song-Ming Confucianism (Stanford Encyclopedia of Philosophy)</a> - Foundational overview tracing the revival of Confucian thought and the split between the School of Principle and School of Mind.</p>
-<p><a href="https://plato.stanford.edu/entries/zhu-xi/" target="_blank" rel="noopener noreferrer">Zhu Xi (Stanford Encyclopedia of Philosophy)</a> - Detailed breakdown of Zhu Xi's synthesis of the Four Books, the investigation of things (gewu), and the dualism of li and qi.</p>
-<p><a href="https://plato.stanford.edu/entries/wang-yangming/" target="_blank" rel="noopener noreferrer">Wang Yangming (Stanford Encyclopedia of Philosophy)</a> - Critical analysis of Wang's School of Heart-Mind, the unity of knowing and acting, and original moral consciousness.</p>
-<p><a href="https://iep.utm.edu/neo-confucian-philosophy/" target="_blank" rel="noopener noreferrer">Neo-Confucian Philosophy (Internet Encyclopedia of Philosophy)</a> - An accessible survey tracing the historical lineage from Northern Song pioneers through Zhu Xi and Wang Yangming.</p>
+<p><a href="https://books.google.com/books?isbn=9780745662497" target="_blank" rel="noopener noreferrer">Neo-Confucian Philosophy: Technologies of Self-Cultivation (Polity Press / Stephen C. Angle &amp; Justin Tiwald)</a> - The core conceptual textbook for this module, systematically explaining Neo-Confucian metaphysics, moral psychology, and self-cultivation practices.</p>
+<p><a href="https://books.google.com/books?isbn=9781624661907" target="_blank" rel="noopener noreferrer">Readings in Later Chinese Philosophy: Han to the 20th Century (Hackett Publishing / Justin Tiwald &amp; Bryan W. Van Norden, eds.)</a> - The primary text companion to Angle &amp; Tiwald above, providing translated works of Zhou Dunyi, Zhang Zai, the Cheng brothers, Zhu Xi, and Wang Yangming.</p>
+<p><a href="https://www.youtube.com/watch?v=3gGPvnYvRU0" target="_blank" rel="noopener noreferrer">China's Favorite Confucian: Wang Yangming (Bryan Van Norden / YouTube)</a> - A university video lecture providing a deep-dive case study on Wang Yangming's critique of Zhu Xi, the unity of knowing and acting, and innate moral knowledge.</p>
+<p><a href="https://plato.stanford.edu/entries/song-ming-confucianism/" target="_blank" rel="noopener noreferrer">Song-Ming Confucianism (Stanford Encyclopedia of Philosophy)</a> - Historical overview tracing the revival of Confucian thought and the division between the School of Principle and the School of Heart-Mind.</p>
+<p><a href="https://plato.stanford.edu/entries/zhu-xi/" target="_blank" rel="noopener noreferrer">Zhu Xi (Stanford Encyclopedia of Philosophy)</a> - Targeted reference entry breaking down Zhu Xi's synthesis of the Four Books, the investigation of things (gewu), and the dualism of li and qi.</p>
+<p><a href="https://plato.stanford.edu/entries/wang-yangming/" target="_blank" rel="noopener noreferrer">Wang Yangming (Stanford Encyclopedia of Philosophy)</a> - Targeted reference entry analyzing Wang Yangming's School of Heart-Mind, the unity of knowing and acting, and original moral consciousness.</p>
+<p><a href="https://iep.utm.edu/neo-confucian-philosophy/" target="_blank" rel="noopener noreferrer">Neo-Confucian Philosophy (Internet Encyclopedia of Philosophy)</a> - An accessible narrative companion tracing the lineage from Northern Song pioneers through Zhu Xi and Wang Yangming.</p>
     </article>
   </main>
 
