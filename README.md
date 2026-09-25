@@ -23,8 +23,8 @@ Because Chinese philosophical traditions developed in continuous, direct debate 
 This curriculum covers the common foundational canon that every student in the discipline needs. Once you have worked through these core subjects, you can branch into the accompanying pages in this series to deepen and apply your knowledge:
 
 - [Advanced Topics](advanced_topics.md) explores specialized subfields, including Wei-Jin Xuanxue ontology, Yogācāra Buddhist phenomenology, Later Mohist logic, Confucian role ethics, and contemporary political meritocracy.
-- [Readings](extra/readings.md) curates advanced monographs, thematic anthologies, and specialized academic literature.
-- [Courses](extra/courses.md) gathers extended recorded seminar series and multimedia lectures for continued study.
+- [Readings](extras/readings.md) curates advanced monographs, thematic anthologies, and specialized academic literature.
+- [Courses](extras/courses.md) gathers extended recorded seminar series and multimedia lectures for continued study.
 
 ### Communities
 

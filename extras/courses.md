@@ -4,10 +4,10 @@ A curated directory of standout university lecture series, high-production MOOCs
 
 ### Course Index
 
-- [Classical Foundations & Pre-Qin Thought](#classical-foundations--pre-qin-thought)
-- [Cosmology, Han Synthesis, & Chinese Buddhism](#cosmology-han-synthesis--chinese-buddhism)
-- [Neo-Confucianism, Modernity, & Comparative Political Philosophy](#neo-confucianism-modernity--comparative-political-philosophy)
-- [Academic Masterclasses, Podcasts, & Audio Series](#academic-masterclasses-podcasts--audio-series)
+- [Classical Foundations & Pre-Qin Thought](#classical-foundations-pre-qin-thought)
+- [Cosmology, Han Synthesis, & Chinese Buddhism](#cosmology-han-synthesis-chinese-buddhism)
+- [Neo-Confucianism, Modernity, & Comparative Political Philosophy](#neo-confucianism-modernity-comparative-political-philosophy)
+- [Academic Masterclasses, Podcasts, & Audio Series](#academic-masterclasses-podcasts-audio-series)
 
 ## Classical Foundations & Pre-Qin Thought
 

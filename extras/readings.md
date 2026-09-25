@@ -4,11 +4,11 @@ A curated collection of field-defining monographs, seminal essays, and transform
 
 ## Reading Index
 
-- [Foundations & Classical Reconstructions (Pre-Qin & Han)](#foundations--classical-reconstructions-pre-qin--han)
-- [Medieval Ontology, Xuanxue, & Buddhist Dialectics (Wei-Jin to Tang)](#medieval-ontology-xuanxue--buddhist-dialectics-wei-jin-to-tang)
-- [Neo-Confucian Metaphysics & Moral Psychology (Song to Qing)](#neo-confucian-metaphysics--moral-psychology-song-to-qing)
-- [Seminal Essays & Interpretive Breakthroughs](#seminal-essays--interpretive-breakthroughs)
-- [Modern Reconstructions, Role Ethics, & Contemporary Political Theory](#modern-reconstructions-role-ethics--contemporary-political-theory)
+- [Foundations & Classical Reconstructions (Pre-Qin & Han)](#foundations-classical-reconstructions-pre-qin-han)
+- [Medieval Ontology, Xuanxue, & Buddhist Dialectics (Wei-Jin to Tang)](#medieval-ontology-xuanxue-buddhist-dialectics-wei-jin-to-tang)
+- [Neo-Confucian Metaphysics & Moral Psychology (Song to Qing)](#neo-confucian-metaphysics-moral-psychology-song-to-qing)
+- [Seminal Essays & Interpretive Breakthroughs](#seminal-essays-interpretive-breakthroughs)
+- [Modern Reconstructions, Role Ethics, & Contemporary Political Theory](#modern-reconstructions-role-ethics-contemporary-political-theory)
 
 ## Foundations & Classical Reconstructions (Pre-Qin & Han)
 
